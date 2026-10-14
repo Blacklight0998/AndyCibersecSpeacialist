@@ -43,7 +43,7 @@ My current objective is to obtain my first professional cybersecurity position w
 |---|:---:|---|
 | Networking fundamentals | 🟡 In progress | Network Security Labs |
 | Linux administration | 🟡 In progress | Linux Security Labs |
-| Python for cybersecurity | 🟡 In progress | Python Security Labs |
+| Python for cybersecurity | 🟡 In progress | [Python Security Labs](./projects/python-security-labs/) |
 | Windows fundamentals | ⚪ Planned | Blacklight Enterprise Lab |
 | Active Directory | ⚪ Planned | Blacklight Enterprise Lab |
 | SIEM and security monitoring | ⚪ Planned | SIEM Labs |
@@ -63,15 +63,17 @@ Enterprise cybersecurity homelab for networking, security monitoring, incident i
 
 ---
 
-### 🐍 Python Security Labs
+### 🐍 [Python Security Labs](./projects/python-security-labs/)
 
-Python exercises and small projects adapted to cybersecurity use cases, including secure password generation, cryptography, log analysis and security automation.
+Python exercises and small projects adapted to cybersecurity use cases.
 
-**Repository name reserved:** `Python-Security-Labs`
+**Current labs:**
+- [🔐 AES-EAX Login Demo](./projects/python-security-labs/parte1_login.py)
+- [🌐 Scapy TCP SYN Port Scanner](./projects/python-security-labs/parte2_scapy.py)
+
+**Skills:** Python · AES-EAX · Secure Random Generation · Scapy · TCP/IP · Network Reconnaissance
 
 **Planned topics:**
-- Secure password generation with `secrets`
-- AES-EAX encryption
 - Password hashing
 - File integrity monitoring
 - Log parsing
