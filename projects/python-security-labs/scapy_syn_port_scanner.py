@@ -1,5 +1,4 @@
-""" En este ejercicio profe utilizamos Scapy para realizar un escaneo de nuestro propio host y comprobar el estado de diferentes puertos. Enviamos paquetes TCP SYN a los puertos seleccionados y analizamos la respuesta para determinar si el puerto se encuentra abierto, cerrado o no responde. 
-"""
+
 from scapy.all import IP, TCP, sr1
 
 def escanear_host(host, puertos):
