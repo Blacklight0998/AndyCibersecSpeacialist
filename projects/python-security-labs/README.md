@@ -15,7 +15,7 @@ A basic authentication lab that demonstrates:
 - Authentication tags for integrity verification
 - Basic login validation
 
-[View `parte1_login.py`](./parte1_login.py)
+[View `aes_eax_login_demo.py`](./aes_eax_login_demo.py)
 
 > Educational note: real-world password storage should normally use secure password hashing rather than reversible encryption.
 
@@ -34,7 +34,7 @@ A localhost network-scanning exercise that demonstrates:
 
 The script is configured to scan `127.0.0.1`, keeping the exercise focused on the local host.
 
-[View `parte2_scapy.py`](./parte2_scapy.py)
+[View `scapy_syn_port_scanner.py`](./scapy_syn_port_scanner.py)
 
 ---
 
