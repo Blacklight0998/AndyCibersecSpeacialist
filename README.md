@@ -41,7 +41,7 @@ My current objective is to obtain my first professional cybersecurity position w
 | Phase | Status | Evidence |
 |---|:---:|---|
 | Networking fundamentals | 🟡 In progress | [Network Security Labs](./projects/network-security-labs/) |
-| Linux administration | 🟡 In progress | Linux Security Labs |
+| Linux administration | 🟡 In progress | [Linux Security Labs](./projects/linux-security-labs/) |
 | Python for cybersecurity | 🟡 In progress | [Python Security Labs](./projects/python-security-labs/) |
 | Windows fundamentals | ⚪ Planned | Blacklight Enterprise Lab |
 | Active Directory | ⚪ Planned | Blacklight Enterprise Lab |
@@ -99,17 +99,20 @@ Networking, traffic analysis and security assessment projects.
 
 ---
 
-### 🐧 Linux Security Labs
+### 🐧 [Linux Security Labs](./projects/linux-security-labs/)
 
-Linux administration and security exercises focused on practical defensive skills.
+Linux administration, networking, system monitoring and automation exercises.
 
-**Repository name reserved:** `Linux-Security-Labs`
+**Current project:**
+- [🖥️ Linux Infrastructure & Monitoring Lab](./projects/linux-security-labs/linux-infrastructure-monitoring/)
 
-**Planned topics:**
-- Users and groups
-- File permissions
-- Processes and services
-- Authentication logs
+**Implemented skills:** Ubuntu VMs · Netplan · Static IPv4 · Linux CLI · Users & Groups · `cron` · `ps` · `top` · `free` · `dmesg` · `ss -tunlp`
+
+**Proposed architecture:** Netdata · Prometheus · Grafana
+
+**Planned upgrades:**
+- Deploy the monitoring stack in the three-VM lab
+- Linux log analysis
 - SSH hardening
 - Firewall configuration
 - Bash security automation
@@ -185,9 +188,12 @@ A university group project adapted for the portfolio, focused on analyzing a res
 ### Systems
 
 - Windows fundamentals
-- Linux command-line basics
-- File systems, users and permissions
-- Basic process and service management
+- Linux command-line administration
+- Linux users and groups
+- File systems and permissions
+- Process and resource monitoring
+- Static networking with Netplan
+- Scheduled tasks with cron
 
 ### Security
 
@@ -198,6 +204,7 @@ A university group project adapted for the portfolio, focused on analyzing a res
 - Introduction to network reconnaissance
 - Incident analysis fundamentals
 - SIEM fundamentals
+- Basic Linux service and port inspection
 
 ---
 
