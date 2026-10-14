@@ -68,8 +68,8 @@ Enterprise cybersecurity homelab for networking, security monitoring, incident i
 Python exercises and small projects adapted to cybersecurity use cases.
 
 **Current labs:**
-- [🔐 AES-EAX Login Demo](./projects/python-security-labs/parte1_login.py)
-- [🌐 Scapy TCP SYN Port Scanner](./projects/python-security-labs/parte2_scapy.py)
+- [🔐 AES-EAX Login Demo](./projects/python-security-labs/aes_eax_login_demo.py)
+- [🌐 Scapy TCP SYN Port Scanner](./projects/python-security-labs/scapy_syn_port_scanner.py)
 
 **Skills:** Python · AES-EAX · Secure Random Generation · Scapy · TCP/IP · Network Reconnaissance
 
