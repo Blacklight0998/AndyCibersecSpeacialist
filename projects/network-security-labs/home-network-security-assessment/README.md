@@ -1,63 +1,78 @@
 # 🏠 Home Network Security & Traffic Analysis
 
-University group project adapted for a cybersecurity portfolio.
+University group project adapted into a cybersecurity portfolio case study.
 
-## Overview
+## Project Overview
 
-This project documents the assessment of a residential network with the objective of understanding its infrastructure, validating connectivity, reviewing wireless security, analyzing network traffic and identifying potential security weaknesses.
+This project documents the assessment of a real residential network with the objective of understanding its infrastructure, validating connectivity, reviewing wireless security, analyzing network traffic and identifying potential security weaknesses.
 
-The original academic project included network design, subnetting, device configuration, connectivity validation, security analysis, bandwidth testing, redundancy analysis, vulnerability identification and a logical/physical topology.
+The original academic work covered device inventory, IPv4 addressing, DHCP, connectivity testing, wireless security, bandwidth measurement, Wireshark traffic analysis, redundancy, vulnerability identification and network topology.
+
+All household-specific personal details and unnecessary identifiers have been omitted from this portfolio version.
+
+## Project Structure
+
+| Section | Description |
+|---|---|
+| [Network Architecture](./network-architecture.md) | Devices, IPv4 layout, DHCP and current vs. improved topology |
+| [Connectivity & Performance](./connectivity-tests.md) | Gateway, Internet, DNS, `tracert` and bandwidth validation |
+| [Wireshark Analysis](./wireshark-analysis.md) | TCP, TLS 1.2, SSDP, IGMP and ICMPv6 observations |
+| [Security Findings](./security-findings.md) | Segmentation, IoT exposure, wireless security and availability risks |
+| [Recommendations](./recommendations.md) | Practical hardening and segmentation improvements |
 
 ## Environment
 
-The analyzed environment included:
+The assessed network contained:
 
 - Fiber Internet connection
-- Wireless router with DHCP
+- Wireless router providing routing, Wi-Fi and DHCP
 - Laptop
-- Mobile devices
+- Three mobile devices
 - Smart TV / set-top box
 - IoT smart speaker
-
-All identifying details from the original household have been intentionally omitted from this portfolio version.
 
 ## Tools and Techniques
 
 - Wireshark
+- Cisco Packet Tracer
 - `ipconfig`
 - `ping`
 - `tracert`
 - Speedtest
-- Cisco Packet Tracer
 - IPv4 addressing analysis
 - DHCP analysis
 - Wireless security review
+- Basic risk assessment
 
-## Connectivity Validation
+## Key Technical Results
 
-The project validated:
+### Connectivity
+
+The assessment successfully validated:
 
 - Communication with the default gateway
-- Internet connectivity using a public IP address
+- External connectivity using a public IP
 - DNS resolution using a domain name
-- Route visibility using `tracert`
+- End-to-end routing using `tracert`
 
-These tests were used to confirm local connectivity, routing to the Internet and DNS functionality.
+### Wireless Security
 
-## Wireless Security Review
+The assessed Wi-Fi environment used:
 
-The analyzed network used:
-
-- WPA2-Personal authentication
+- WPA2-Personal
 - CCMP encryption
-- 5 GHz Wi-Fi
+- 5 GHz
 - IEEE 802.11ac
 
-The project also recommended using strong credentials, maintaining router firmware and disabling unused features such as WPS when possible.
+### Network Performance
 
-## Traffic Analysis with Wireshark
+A documented Speedtest result showed approximately:
 
-Wireshark was used to inspect traffic patterns and identify common protocols.
+- **155.20 Mbps download**
+- **157.18 Mbps upload**
+- **4 ms latency**
+
+### Wireshark
 
 Observed protocols included:
 
@@ -67,67 +82,79 @@ Observed protocols included:
 - IGMP
 - ICMPv6
 
-The capture showed behavior consistent with normal residential traffic. No obvious malicious traffic was identified during the analyzed capture period.
+The captured traffic was consistent with normal residential activity during the observation period, and no obvious malicious pattern was identified in the analyzed capture.
 
 ## Security Findings
 
-### 1. Lack of Network Segmentation
+| Finding | Risk | Priority |
+|---|---|---:|
+| Flat LAN with no segmentation | Compromised devices can communicate with other local systems | Medium |
+| IoT devices on trusted LAN | Larger lateral exposure | Medium |
+| Possible unnecessary WPS | Additional wireless attack surface | Medium |
+| Router firmware maintenance | Potential exposure to unpatched issues | Medium |
+| Single ISP/router dependency | Complete loss of connectivity during failure | Low |
 
-All devices were connected to the same local network.
+The most significant architectural improvement identified was separating trusted endpoints from IoT and multimedia devices.
 
-**Risk:** If an IoT or user device were compromised, it could potentially communicate with other devices on the same LAN.
+## Current vs. Recommended Design
 
-**Recommendation:** Place IoT and less-trusted devices on a separate guest network or VLAN when the network equipment supports it.
+```text
+CURRENT
 
-### 2. Single Point of Failure
+Internet
+   |
+Router
+   |
+   +-- Laptop
+   +-- Phones
+   +-- Smart Speaker
+   +-- TV / Set-top Box
 
-The network depended on a single router and Internet connection.
+All devices share the same LAN.
 
-**Risk:** A router or ISP outage would affect every device in the household.
+            ↓
 
-**Recommendation:** Maintain an alternative connectivity method such as mobile tethering for temporary redundancy.
+RECOMMENDED
 
-### 3. Router and Wireless Security
+Internet
+   |
+Router / Firewall
+   |
+   +-- Trusted Network
+   |     +-- Laptop
+   |     +-- Phones
+   |
+   +-- IoT / Guest Network
+         +-- Smart Speaker
+         +-- TV / Set-top Box
+```
 
-Potential risks include outdated firmware, weak credentials and unnecessary services.
+## Skills Demonstrated
 
-**Recommendations:**
+- Network inventory and documentation
+- IPv4 addressing and subnet awareness
+- DHCP and default-gateway analysis
+- DNS troubleshooting
+- Connectivity validation
+- Route analysis
+- Wireless-security review
+- Wireshark packet analysis
+- Protocol identification
+- Network segmentation concepts
+- Availability and redundancy analysis
+- Basic vulnerability and risk assessment
+- Technical recommendations
 
-- Keep router firmware updated
-- Use a strong Wi-Fi password
-- Disable WPS if it is not required
-- Review connected devices periodically
-- Use WPA3 if supported in a future upgrade
+## Lessons Learned
 
-## Performance Review
+This project helped connect networking fundamentals with defensive security. A network can function correctly while still having architectural weaknesses such as lack of segmentation, excessive trust between device types or a single point of failure.
 
-A network speed test showed performance consistent with the contracted residential service, with low latency and upload/download throughput sufficient for common household activities.
-
-QoS was identified as a possible future improvement for prioritizing latency-sensitive applications such as video calls or online classes.
-
-## Network Topology
-
-The physical topology followed a simple residential star-style design where the Internet connection reached the main router and the router distributed connectivity to endpoints such as laptops, smartphones, IoT devices and multimedia equipment.
-
-## Key Lessons
-
-This project helped reinforce practical concepts including:
-
-- IPv4 addressing
-- DHCP
-- Default gateways
-- DNS
-- Wireless security
-- Network troubleshooting
-- Packet analysis
-- Network segmentation
-- Availability and redundancy
-- Basic vulnerability assessment
+The Wireshark portion also demonstrated the importance of understanding normal network behavior before attempting to identify abnormal or malicious traffic.
 
 ## Project Context
 
-This was a university group project completed for a networking course. This portfolio version focuses on the technical and cybersecurity-related aspects of the work and intentionally removes household-specific personal information.
+This was completed as a university group project for a networking course. This portfolio version focuses on the technical and cybersecurity-related aspects of the work rather than reproducing the academic report.
 
-## Portfolio Note
+## Privacy Note
 
-The complete original academic report is not published here because it contains personal names and identifiable network details from a real residential environment. This sanitized documentation preserves the technical analysis while reducing unnecessary exposure of private information.
+The complete original report is intentionally not published because it contains personal names and identifiable details from a real residential environment. This sanitized version preserves the technical evidence while reducing unnecessary exposure of private information.
