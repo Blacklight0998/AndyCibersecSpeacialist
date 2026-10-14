@@ -69,9 +69,10 @@ Python exercises and small projects adapted to cybersecurity use cases.
 
 **Current labs:**
 - [🔐 AES-EAX Login Demo](./projects/python-security-labs/aes_eax_login_demo.py)
+- [🚩 AES-EAX CTF Challenge](./projects/python-security-labs/aes_eax_ctf_challenge.py)
 - [🌐 Scapy TCP SYN Port Scanner](./projects/python-security-labs/scapy_syn_port_scanner.py)
 
-**Skills:** Python · AES-EAX · Secure Random Generation · Scapy · TCP/IP · Network Reconnaissance
+**Skills:** Python · AES-EAX · Secure Random Generation · Scapy · TCP/IP · Network Reconnaissance · CTF Fundamentals
 
 **Planned topics:**
 - Password hashing
