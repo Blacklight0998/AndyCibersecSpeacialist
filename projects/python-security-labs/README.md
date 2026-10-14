@@ -21,6 +21,24 @@ A basic authentication lab that demonstrates:
 
 ---
 
+### 🚩 AES-EAX CTF Challenge
+
+A small capture-the-flag style exercise focused on encrypting and recovering a secret message using AES-EAX.
+
+It demonstrates:
+
+- UTF-8 encoding before encryption
+- Random AES-128 key generation
+- AES-EAX authenticated encryption
+- Nonce handling
+- Integrity verification using an authentication tag
+- Exception handling when verification fails
+- Recovery of a CTF-style flag after successful decryption
+
+[View `aes_eax_ctf_challenge.py`](./aes_eax_ctf_challenge.py)
+
+---
+
 ### 🌐 Scapy TCP SYN Port Scanner
 
 A localhost network-scanning exercise that demonstrates:
