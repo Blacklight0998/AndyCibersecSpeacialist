@@ -1,4 +1,3 @@
-
 <div align="center">
 
 # 🛡️ Andy Vega | Cybersecurity Portfolio
@@ -41,7 +40,7 @@ My current objective is to obtain my first professional cybersecurity position w
 
 | Phase | Status | Evidence |
 |---|:---:|---|
-| Networking fundamentals | 🟡 In progress | Network Security Labs |
+| Networking fundamentals | 🟡 In progress | [Network Security Labs](./projects/network-security-labs/) |
 | Linux administration | 🟡 In progress | Linux Security Labs |
 | Python for cybersecurity | 🟡 In progress | [Python Security Labs](./projects/python-security-labs/) |
 | Windows fundamentals | ⚪ Planned | Blacklight Enterprise Lab |
@@ -79,6 +78,24 @@ Python exercises and small projects adapted to cybersecurity use cases.
 - File integrity monitoring
 - Log parsing
 - Security automation scripts
+
+---
+
+### 🌐 [Network Security Labs](./projects/network-security-labs/)
+
+Networking, traffic analysis and security assessment projects.
+
+**Current project:**
+- [🏠 Home Network Security & Traffic Analysis](./projects/network-security-labs/home-network-security-assessment/)
+
+**Skills:** IPv4 · DHCP · DNS · Wireshark · TCP/IP · Wireless Security · Network Segmentation · Troubleshooting
+
+**Planned topics:**
+- ARP analysis
+- Packet Tracer labs
+- Network troubleshooting
+- Packet analysis
+- Segmentation and VLAN fundamentals
 
 ---
 
@@ -132,50 +149,24 @@ Hands-on detection and investigation exercises using SIEM platforms commonly use
 
 ---
 
-### 🌐 Network Security Labs
-
-Networking and packet-analysis labs applied to cybersecurity.
-
-**Repository name reserved:** `Network-Security-Labs`
-
-**Planned topics:**
-- TCP/IP
-- IPv4 and subnetting
-- ARP
-- DNS
-- Wireshark
-- Cisco Packet Tracer
-- Network troubleshooting
-- Packet analysis
-
----
-
 ## 🧪 Featured Project
 
-### 🌐 Network Fundamentals Lab
+### 🏠 Home Network Security & Traffic Analysis
 
-A growing technical laboratory focused on understanding how computer networks operate and how networking concepts relate to cybersecurity.
+A university group project adapted for the portfolio, focused on analyzing a residential network from a networking and security perspective.
 
-**Current topics:**
+**Work included:**
 
-- Internet communication flow
-- OSI and TCP/IP models
-- IPv4 addressing
-- IPv4 datagrams and encapsulation
-- Address Resolution Protocol
-- Cisco IOS fundamentals
-- Basic device configuration
+- Network inventory
+- IPv4 and DHCP analysis
+- Connectivity validation with ping and tracert
+- Wireless security review
+- Bandwidth testing
+- Wireshark traffic analysis
+- Security findings and recommendations
+- Network topology documentation
 
-**Planned evidence:**
-
-- Network diagrams
-- Cisco Packet Tracer topologies
-- Wireshark packet captures
-- IPv4 documentation
-- ARP analysis
-- Connectivity troubleshooting
-
-Future repository: `Network-Security-Labs`
+[View project](./projects/network-security-labs/home-network-security-assessment/)
 
 ---
 
@@ -275,4 +266,3 @@ Each published project will include:
 ### Building practical cybersecurity skills through documented projects.
 
 </div>
-
