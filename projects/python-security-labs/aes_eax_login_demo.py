@@ -1,4 +1,3 @@
-"""En este ejercicio profe agregamos secrets para poder generar de manera segura la contraseña y que no se pueda adivinar facilmente, tambien agregamos un nonce para poder cifrar la contraseña y que no se pueda descifrar facilmente, y por ultimo agregamos un tag para poder verificar la integridad de la contraseña cifrada y que no se pueda modificar facilmente."""
 import secrets
 import string
 import time
