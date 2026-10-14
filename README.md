@@ -30,7 +30,9 @@ My current objective is to obtain my first professional cybersecurity position w
 - Cisco IOS and Packet Tracer
 - Network traffic analysis with Wireshark
 - Linux and Windows administration
+- Python applied to cybersecurity
 - Security operations and incident analysis
+- SIEM and security monitoring
 - Preparation for CompTIA Security+
 
 ---
@@ -39,15 +41,109 @@ My current objective is to obtain my first professional cybersecurity position w
 
 | Phase | Status | Evidence |
 |---|:---:|---|
-| Networking fundamentals | 🟡 In progress | Network Fundamentals Lab |
-| Linux administration | ⚪ Planned | Linux Security Lab |
-| Windows fundamentals | ⚪ Planned | Windows Security Lab |
-| Active Directory | ⚪ Planned | Active Directory Lab |
-| SIEM and security monitoring | ⚪ Planned | Wazuh SOC Lab |
-| Incident response | ⚪ Planned | Incident Investigation Cases |
-| Python automation | ⚪ Planned | Security Automation Tools |
+| Networking fundamentals | 🟡 In progress | Network Security Labs |
+| Linux administration | 🟡 In progress | Linux Security Labs |
+| Python for cybersecurity | 🟡 In progress | Python Security Labs |
+| Windows fundamentals | ⚪ Planned | Blacklight Enterprise Lab |
+| Active Directory | ⚪ Planned | Blacklight Enterprise Lab |
+| SIEM and security monitoring | ⚪ Planned | SIEM Labs |
+| Incident response | 🟡 In progress | Blacklight Enterprise Lab |
 | Cloud security | ⚪ Planned | Azure Security Lab |
-| CompTIA Security+ | ⚪ Planned | Certification |
+| CompTIA Security+ | 🟡 In progress | Certification |
+
+---
+
+## 🗂️ Project Repositories
+
+### 🛡️ [Blacklight Enterprise Lab](https://github.com/Blacklight0998/Blacklight-Enterprise-Lab)
+
+Enterprise cybersecurity homelab for networking, security monitoring, incident investigation and defensive security practice.
+
+**Focus:** SOC Operations · Incident Analysis · Security Monitoring · Blue Team
+
+---
+
+### 🐍 Python Security Labs
+
+Python exercises and small projects adapted to cybersecurity use cases, including secure password generation, cryptography, log analysis and security automation.
+
+**Repository name reserved:** `Python-Security-Labs`
+
+**Planned topics:**
+- Secure password generation with `secrets`
+- AES-EAX encryption
+- Password hashing
+- File integrity monitoring
+- Log parsing
+- Security automation scripts
+
+---
+
+### 🐧 Linux Security Labs
+
+Linux administration and security exercises focused on practical defensive skills.
+
+**Repository name reserved:** `Linux-Security-Labs`
+
+**Planned topics:**
+- Users and groups
+- File permissions
+- Processes and services
+- Authentication logs
+- SSH hardening
+- Firewall configuration
+- Bash security automation
+
+---
+
+### 🚨 SOC Incident Lab
+
+Documented simulated security incidents focused on SOC L1 investigation and response workflows.
+
+**Repository name reserved:** `SOC-Incident-Lab`
+
+**Planned topics:**
+- Failed login investigation
+- Brute-force detection
+- Suspicious PowerShell activity
+- Malware alert triage
+- Indicators of Compromise
+- MITRE ATT&CK mapping
+- Incident reports
+
+---
+
+### 📊 SIEM Labs
+
+Hands-on detection and investigation exercises using SIEM platforms commonly used in security operations.
+
+**Repository name reserved:** `SIEM-Labs`
+
+**Planned platforms:**
+- Splunk
+- Microsoft Sentinel
+- Elastic Security
+- Wazuh
+
+**Planned skills:** SPL · KQL · Detection Rules · Alert Triage · Log Analysis
+
+---
+
+### 🌐 Network Security Labs
+
+Networking and packet-analysis labs applied to cybersecurity.
+
+**Repository name reserved:** `Network-Security-Labs`
+
+**Planned topics:**
+- TCP/IP
+- IPv4 and subnetting
+- ARP
+- DNS
+- Wireshark
+- Cisco Packet Tracer
+- Network troubleshooting
+- Packet analysis
 
 ---
 
@@ -76,7 +172,7 @@ A growing technical laboratory focused on understanding how computer networks op
 - ARP analysis
 - Connectivity troubleshooting
 
-Repository: `Coming soon`
+Future repository: `Network-Security-Labs`
 
 ---
 
@@ -106,6 +202,8 @@ Repository: `Coming soon`
 - Basic attack surfaces
 - Security controls
 - Introduction to network reconnaissance
+- Incident analysis fundamentals
+- SIEM fundamentals
 
 ---
 
@@ -114,6 +212,7 @@ Repository: `Coming soon`
 ![Cisco Packet Tracer](https://img.shields.io/badge/Cisco%20Packet%20Tracer-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
@@ -137,7 +236,7 @@ Repository: `Coming soon`
 
 Only completed and verifiable certifications will be listed here.
 
-### Planned
+### In Progress / Planned
 
 - CompTIA Security+
 - Microsoft Security, Compliance, and Identity Fundamentals — SC-900
