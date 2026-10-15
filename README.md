@@ -1,164 +1,250 @@
-<div align="center">
-
-#  Andy Vega Araya - Cybersecurity Portfolio
+# Andy Vega Araya | Cybersecurity Portfolio
 
 **Cybersecurity Engineering Student | SOC & Blue Team Focus**
 
-Networking · Linux · Windows · Security Operations · Python · Java
-
-[LinkedIn](PEGA_AQUI_TU_LINKEDIN) · [Email](mailto:andyvear98@gmail.com)
-
-</div>
+Networking · Linux · Windows · Security Operations · Python
 
 ---
 
-## whoami
+## About me
 
-I'm a Cybersecurity Engineering student at Universidad Fidélitas, currently building practical skills for an entry-level position and working on my own portfolio. My main focus is to obtain a position in Security Operations, Blue Team or cybersecurity engineering.
+I'm a Cybersecurity Engineering student at Universidad Fidélitas, currently building practical skills for an entry-level cybersecurity position.
 
-I have professional experience working in multinational environments in the dental aligner industry, following strict procedures, management of patient information, quality standards and performance metrics. Working with a multidisciplinary team in a fast-paced environment. 
+My main focus is Security Operations, Blue Team and cybersecurity engineering.
 
-I am developing a portfolio through networking, system administration, security monitoring and documented technical laboratories.
+I have professional experience working in multinational environments in the dental aligner industry, following strict procedures, handling confidential patient information, quality standards and performance metrics.
 
-My current objective is to obtain my first professional cybersecurity position while continuing my university degree.
-
+I'm building this portfolio through university projects, personal labs and cybersecurity training.
 
 ---
+
 ## Languages
 
-Spanish - Native
-
-English - B2+(professional working proficiency)
-
-Portuguese - Basic
-
----
-## Soft skills 
-
-Analytical thinking 
-
-Team Work 
-
-Working under pressure
-
-Time management
-
-Continuous Learning
+- Spanish — Native
+- English — B2+ (professional working proficiency)
+- Portuguese — Basic
 
 ---
 
-## Current Cybersecurity Education
+## Soft Skills
 
-Cybersecurity Engineering (graduation expected 2028)
-
-CompTIA Security+ (SY0-701) — CompTIA | (exam october 27)
-
-Google Cybersecurity Professional Certificate — Google / Coursera | 2026
-
-Google Cybersecurity + CompTIA Security+ Dual Credential — Google & CompTIA | (exam october 27)
-
-Microsoft Certified: Security Operations Analyst Associate (SC-200) — Planned exam: January 2027
-
-
-### Cisco Networking Academy
-
-CCNA: Introduction to Networks — 2026
-
-Operating Systems Basics — 2026
-
-Computer Hardware Basics — 2026
+- Analytical Thinking
+- Teamwork
+- Working Under Pressure
+- Time Management
+- Continuous Learning
 
 ---
 
-## Learning Roadmap
+## Certifications & Training
 
-| Phase | Status | Evidence |
-|---|:---:|---|
-| Networking fundamentals | 🟡 In progress | [Network Security Labs](./projects/network-security-labs/) |
-| Linux administration | 🟡 In progress | [Linux Security Labs](./projects/linux-security-labs/) |
-| Python for cybersecurity | 🟡 In progress | [Python Security Labs](./projects/python-security-labs/) |
-| Windows fundamentals | ⚪ Planned | Blacklight Enterprise Lab |
-| Active Directory | ⚪ Planned | Blacklight Enterprise Lab |
-| SIEM and security monitoring | ⚪ Planned | SIEM Labs |
-| Incident response | 🟡 In progress | Blacklight Enterprise Lab |
-| Cloud security | ⚪ Planned | Azure Security Lab |
+| Certification / Training | Status |
+|---|---|
+| CompTIA Security+ (SY0-701) | Exam: October 27, 2026 |
+| Google Cybersecurity Professional Certificate | 2026 |
+| Microsoft SC-200: Security Operations Analyst | Planned: January 2027 |
+| CCNA: Introduction to Networks | Cisco Networking Academy · 2026 |
+| Operating Systems Basics | Cisco Networking Academy · 2026 |
+| Computer Hardware Basics | Cisco Networking Academy · 2026 |
 
 ---
 
-##  Project Repositories
+# Projects
 
-### [Blacklight Enterprise Lab](https://github.com/Blacklight0998/Blacklight-Enterprise-Lab)
-
-Enterprise cybersecurity homelab for networking, security monitoring, incident investigation and defensive security practice.
-
-**Focus:** SOC Operations · Incident Analysis · Security Monitoring · Blue Team
-
----
-
-###  [Python Security Labs](./projects/python-security-labs/)
-
-Python exercises and small projects adapted to cybersecurity use cases.
-
-**Current labs:**
-- [ AES-EAX Login Demo](./projects/python-security-labs/aes_eax_login_demo.py)
-- [ AES-EAX CTF Challenge](./projects/python-security-labs/aes_eax_ctf_challenge.py)
-- [ Scapy TCP SYN Port Scanner](./projects/python-security-labs/scapy_syn_port_scanner.py)
-
-**Skills:** Python · AES-EAX · Secure Random Generation · Scapy · TCP/IP · Network Reconnaissance · CTF Fundamentals
-
-** topics:**
-- Password hashing
-- File integrity monitoring
-- Log parsing
-- Security automation scripts
+| Project | What I worked on | Tools |
+|---|---|---|
+| [Linux Security Labs](./projects/linux-security-labs/) | Linux administration, users and permissions, log analysis, monitoring and networking | Ubuntu, Netplan, sudo, chage, cron |
+| [Network Security Labs](./projects/network-security-labs/) | VLSM, traffic analysis, troubleshooting and home network security | Wireshark, Packet Tracer, ping, tracert |
+| [Python Security Labs](./projects/python-security-labs/) | Security-related Python exercises and small tools | Python, Scapy, AES-EAX |
+| [Blacklight Enterprise Lab](https://github.com/Blacklight0998/Blacklight-Enterprise-Lab) | Homelab focused on SOC, networking and defensive security | VirtualBox, Windows, Linux |
 
 ---
 
-###  [Network Security Labs](./projects/network-security-labs/)
+## Linux Security Labs
 
-Networking, traffic analysis and security assessment projects.
+Linux projects from university activities and personal practice.
 
-**Current projects:**
-- [ Home Network Security & Traffic Analysis](./projects/network-security-labs/home-network-security-assessment/)
-- [ Packet Tracer VLSM Network Lab](./projects/network-security-labs/packet-tracer-vlsm-lab/)
+### Current projects
 
-**Skills:** IPv4 · VLSM · DHCP · DNS · Wireshark · TCP/IP · Packet Tracer · Wireless Security · Network Segmentation · Troubleshooting
-
-**topics:**
-- ARP analysis
-- Packet Tracer labs
-- Network troubleshooting
-- Packet analysis
-- Segmentation and VLAN fundamentals
-
----
-
-###  [Linux Security Labs](./projects/linux-security-labs/)
-
-Linux administration, networking, system monitoring and security exercises.
-
-**Current projects:**
 - [Linux Infrastructure & Monitoring Lab](./projects/linux-security-labs/linux-infrastructure-monitoring/)
 - [Linux System Diagnosis & Log Analysis](./projects/linux-security-labs/linux-system-diagnosis/)
 - [Linux User & Access Management Lab](./projects/linux-security-labs/linux-user-access-management/)
 
-**Implemented skills:** Ubuntu VMs · Netplan · Static IPv4 · Linux CLI · Users & Groups · Log Analysis · Process Monitoring · `sudo` · `chage` · Session Review
+### Things practiced
 
-**Planned upgrades:**
-- Deploy the monitoring stack in the three-VM lab
-- SSH hardening
-- Firewall configuration
-- Bash security automation
+- Linux CLI
+- Users and groups
+- sudo and privilege management
+- Password aging with `chage`
+- Session review with `who` and `w`
+- Log analysis
+- Process monitoring
+- Static networking with Netplan
+- Cron jobs
+- Basic system troubleshooting
 
 ---
 
-###  SOC Incident Lab
+## Network Security Labs
 
-Documented simulated security incidents focused on SOC L1 investigation and response workflows.
+Networking projects focused on understanding how networks work and how they can be analyzed from a security perspective.
 
-**Repository name reserved:** `SOC-Incident-Lab`
+### Current projects
 
-**Planned topics:**
+- [Home Network Security & Traffic Analysis](./projects/network-security-labs/home-network-security-assessment/)
+- [Packet Tracer VLSM Network Lab](./projects/network-security-labs/packet-tracer-vlsm-lab/)
+
+### Things practiced
+
+- IPv4 addressing
+- VLSM subnetting
+- DHCP
+- DNS
+- ARP
+- TCP/IP
+- Wireshark
+- Packet Tracer
+- Wireless security
+- Network troubleshooting
+- Connectivity testing
+
+---
+
+## Python Security Labs
+
+Small Python projects used to practice programming in a cybersecurity context.
+
+### Current labs
+
+- [AES-EAX Login Demo](./projects/python-security-labs/aes_eax_login_demo.py)
+- [AES-EAX CTF Challenge](./projects/python-security-labs/aes_eax_ctf_challenge.py)
+- [Scapy TCP SYN Port Scanner](./projects/python-security-labs/scapy_syn_port_scanner.py)
+
+### Things practiced
+
+- Python
+- Scapy
+- TCP/IP
+- AES-EAX
+- Secure random generation
+- Network reconnaissance
+- Basic CTF concepts
+
+---
+
+## Blacklight Enterprise Lab
+
+[View repository](https://github.com/Blacklight0998/Blacklight-Enterprise-Lab)
+
+This is a homelab I am building to practice networking, monitoring, incident investigation and defensive security.
+
+**Focus:**
+
+- SOC Operations
+- Incident Analysis
+- Security Monitoring
+- Blue Team
+- Windows and Linux environments
+
+---
+
+## Featured Project
+
+### Home Network Security & Traffic Analysis
+
+University group project adapted for this portfolio.
+
+The project focused on analyzing a residential network and understanding its configuration, traffic and possible security improvements.
+
+### Work included
+
+- Network inventory
+- IPv4 and DHCP analysis
+- Connectivity tests using ping and tracert
+- Wireless security review
+- Bandwidth testing
+- Wireshark traffic analysis
+- Security findings and recommendations
+- Network topology
+
+[View project](./projects/network-security-labs/home-network-security-assessment/)
+
+> Personal and network-specific information such as SSIDs, MAC addresses and other identifiers were removed or censored from screenshots.
+
+---
+
+# Technical Knowledge
+
+## Networking
+
+- TCP/IP fundamentals
+- OSI model
+- IPv4 addressing
+- VLSM
+- Network encapsulation
+- Basic switching and routing
+- Cisco IOS basics
+- DNS
+- DHCP
+- ARP
+
+## Systems
+
+- Linux command-line administration
+- Linux users and groups
+- File systems and permissions
+- Process and resource monitoring
+- Log review
+- Static networking with Netplan
+- Scheduled tasks with cron
+- Windows fundamentals
+
+## Security
+
+- Threats, vulnerabilities and risks
+- Basic attack surfaces
+- Security controls
+- Network reconnaissance
+- Account and session auditing
+- Incident analysis fundamentals
+- SIEM fundamentals
+- Linux service and port inspection
+
+---
+
+## Tools
+
+- Wireshark
+- Cisco Packet Tracer
+- Linux
+- Python
+- Git / GitHub
+- Visual Studio Code
+- Oracle VirtualBox
+
+---
+
+# Learning Roadmap
+
+| Area | Status |
+|---|:---:|
+| Networking | 🟡 In progress |
+| Linux | 🟡 In progress |
+| Python for cybersecurity | 🟡 In progress |
+| Incident Response | 🟡 In progress |
+| Windows / Active Directory | ⚪ Planned |
+| SIEM and Security Monitoring | ⚪ Planned |
+| SOC Incident Lab | ⚪ Planned |
+| Cloud Security / Azure | ⚪ Planned |
+
+---
+
+## Future Labs
+
+### SOC Incident Lab
+
+Planned topics:
+
 - Failed login investigation
 - Brute-force detection
 - Suspicious PowerShell activity
@@ -167,126 +253,34 @@ Documented simulated security incidents focused on SOC L1 investigation and resp
 - MITRE ATT&CK mapping
 - Incident reports
 
----
+### SIEM Labs
 
-###  SIEM Labs
+Planned platforms:
 
-Hands-on detection and investigation exercises using SIEM platforms commonly used in security operations.
-
-**Repository name reserved:** `SIEM-Labs`
-
-**Planned platforms:**
-- Splunk
 - Microsoft Sentinel
-- Elastic Security
+- Splunk
 - Wazuh
-
-**Planned skills:** SPL · KQL · Detection Rules · Alert Triage · Log Analysis
-
----
-
-##  Featured Project
-
-###  Home Network Security & Traffic Analysis
-
-A university group project adapted for the portfolio, focused on analyzing a residential network from a networking and security perspective.
-
-**Work included:**
-
-- Network inventory
-- IPv4 and DHCP analysis
-- Connectivity validation with ping and tracert
-- Wireless security review
-- Bandwidth testing
-- Wireshark traffic analysis
-- Security findings and recommendations
-- Network topology documentation
-
-[View project](./projects/network-security-labs/home-network-security-assessment/)
+- Elastic Security
 
 ---
 
-##  Technical Knowledge
+## How I document my projects
 
-### Networking
+I try to include:
 
-- TCP/IP fundamentals
-- OSI model
-- IPv4 addressing
-- VLSM subnetting
-- Network encapsulation
-- Basic switching and routing concepts
-- Cisco IOS navigation
-- DNS and ARP fundamentals
-
-### Systems
-
-- Windows fundamentals
-- Linux command-line administration
-- Linux users and groups
-- Linux access and privilege management
-- File systems and permissions
-- Process and resource monitoring
-- Linux log review
-- Static networking with Netplan
-- Scheduled tasks with cron
-
-### Security
-
-- Threats, vulnerabilities and risks
-- Basic attack surfaces
-- Security controls
-- Network reconnaissance
-- Incident analysis fundamentals
-- SIEM fundamentals
-- Linux service and port inspection
-- Basic account and session auditing
-
----
-
-##  Tools
-
-Cisco Packet Tracer
-
-Wireshark
-
-Linux
-
-Python
-
-GitHub
-
-Visual Studio Code
-
-Oracle VM Virtual Box
-
-
----
-
-##  Portfolio Standards
-Each published project will include:
-
-- Business or technical scenario
-- Objectives
-- Technologies used
-- Architecture or topology
-- Implementation steps
-- Evidence and screenshots
-- Security considerations
+- Scenario
+- Objective
+- Tools used
+- Configuration or topology
+- What I did
+- Screenshots or evidence
 - Problems encountered
-- Conclusions and lessons learned
+- Security considerations
+- What I learned
 
 ---
 
-##  Contact
+## Contact
 
-- LinkedIn: `PEGA_AQUI_TU_LINKEDIN`
 - Email: `andyvear98@gmail.com`
 - GitHub: [Blacklight0998](https://github.com/Blacklight0998)
-
----
-
-<div align="center">
-
-
-</div>
