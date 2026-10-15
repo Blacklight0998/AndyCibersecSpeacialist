@@ -135,16 +135,17 @@ Networking, traffic analysis and security assessment projects.
 
 ###  [Linux Security Labs](./projects/linux-security-labs/)
 
-Linux administration, networking, system monitoring and automation exercises.
+Linux administration, networking, system monitoring and security exercises.
 
-**Current project:**
+**Current projects:**
 - [Linux Infrastructure & Monitoring Lab](./projects/linux-security-labs/linux-infrastructure-monitoring/)
+- [Linux System Diagnosis & Log Analysis](./projects/linux-security-labs/linux-system-diagnosis/)
+- [Linux User & Access Management Lab](./projects/linux-security-labs/linux-user-access-management/)
 
-**Implemented skills:** Ubuntu VMs · Netplan · Static IPv4 · Linux CLI · Users & Groups · 
+**Implemented skills:** Ubuntu VMs · Netplan · Static IPv4 · Linux CLI · Users & Groups · Log Analysis · Process Monitoring · `sudo` · `chage` · Session Review
 
 **Planned upgrades:**
 - Deploy the monitoring stack in the three-VM lab
-- Linux log analysis
 - SSH hardening
 - Firewall configuration
 - Bash security automation
@@ -223,8 +224,10 @@ A university group project adapted for the portfolio, focused on analyzing a res
 - Windows fundamentals
 - Linux command-line administration
 - Linux users and groups
+- Linux access and privilege management
 - File systems and permissions
 - Process and resource monitoring
+- Linux log review
 - Static networking with Netplan
 - Scheduled tasks with cron
 
@@ -237,6 +240,7 @@ A university group project adapted for the portfolio, focused on analyzing a res
 - Incident analysis fundamentals
 - SIEM fundamentals
 - Linux service and port inspection
+- Basic account and session auditing
 
 ---
 
