@@ -29,4 +29,10 @@ The router interfaces were assigned according to the VLSM plan.
 | S0/3/0 | R2-R3 | 10.10.4.70 | 255.255.255.252 |
 | S0/3/1 | R1-R3 | 10.10.4.74 | 255.255.255.252 |
 
+## Evidence
+
+![Interface configuration in Packet Tracer](./screenshots/02_interface_configuration.png)
+
+![Routing and interface checks](./screenshots/03_routing_and_interfaces.png)
+
 This part of the lab helped connect the subnetting calculations with the actual router interfaces in Packet Tracer.
