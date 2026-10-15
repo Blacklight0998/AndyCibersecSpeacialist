@@ -1,67 +1,40 @@
 # Network Architecture
 
-## Environment Summary
+## Original Topology
 
-The assessed residential network used a fiber Internet connection connected to a single wireless router that provided routing, switching, Wi-Fi access and DHCP services.
+![Original network topology](./screenshots/11_network_topology.png)
 
-The documented environment included:
+The residential network used one router as the central device for Internet access, DHCP and Wi-Fi. The documented environment included a laptop, three mobile devices, a smart speaker and TV equipment.
 
-- 1 wireless router
-- 1 laptop
-- 3 mobile devices
-- 1 smart TV / set-top box
-- 1 IoT smart speaker
+## IPv4 and DHCP Configuration
 
-The network used a single local IPv4 segment with a /24 subnet mask. The assessed laptop received an address in the `192.168.1.0/24` network and used `192.168.1.1` as the default gateway.
+The host was configured in the `192.168.1.0/24` private network and used `192.168.1.1` as the default gateway. DHCP was enabled on the router.
 
-## Simplified Physical Topology
+### Windows IP configuration
 
-```text
-Internet
-   |
-Fiber ISP
-   |
-Main Router / DHCP / Wi-Fi
-   |
-   +-- Laptop
-   +-- Smartphone
-   +-- Smartphone
-   +-- Smartphone
-   +-- Smart Speaker / IoT
-   +-- Smart TV / Set-top Box
-```
+![Windows ipconfig evidence](./screenshots/01_ipconfig_redacted.png)
 
-## Addressing and DHCP
+![Windows network configuration](./screenshots/02_ipconfig_network_redacted.png)
 
-The router provided dynamic addressing through DHCP. This simplified device onboarding and reduced the need for manual IPv4 configuration.
+The screenshots are from the original project. Hostname, MAC addresses and other identifiers were redacted, while the addressing information used for the analysis was kept visible.
 
-Observed network characteristics included:
+## Wireless Configuration
 
-- Private IPv4 addressing
-- `/24` subnet mask (`255.255.255.0`)
-- Dynamic host configuration through DHCP
-- A single default gateway for Internet access
+![Wi-Fi security configuration](./screenshots/03_wifi_security_redacted.png)
 
-## Security Perspective
+The connection showed:
 
-All endpoints were located on the same local network segment. From a security perspective, this increases the amount of direct communication possible between trusted user devices and less-trusted IoT devices.
+- 5 GHz band
+- IEEE 802.11ac
+- WPA2-Personal authentication
+- CCMP encryption
+- 650 Mbps negotiated receive/transmit rate
+- Strong signal during the test
 
-A stronger design would separate IoT and multimedia devices from trusted endpoints using a guest network or VLAN when supported by the network equipment.
+The SSID, BSSID and other identifiers were redacted before publishing.
 
-## Improved Logical Design
+## Security Observation
 
-```text
-Internet
-   |
-Router / Firewall
-   |
-   +-- Trusted Network
-   |     +-- Laptop
-   |     +-- Smartphones
-   |
-   +-- IoT / Guest Network
-         +-- Smart Speaker
-         +-- Smart TV / Set-top Box
-```
+All devices were connected to the same LAN. This makes administration simple, but it also means trusted user devices and less-trusted IoT devices share the same local segment.
 
-This separation would reduce the impact of a compromise on an IoT or multimedia device and limit lateral communication between device groups.
+A future improvement would be to move IoT and multimedia devices to a guest network or separate VLAN when supported by the router.
