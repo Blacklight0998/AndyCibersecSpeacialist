@@ -26,9 +26,23 @@ The lab helped me practice checking logs and system activity before making assum
 
 ## Evidence
 
-The original activity includes terminal screenshots from the Ubuntu environment. For the portfolio I keep only selected screenshots with personal system identifiers removed.
+### Kernel warnings
 
-Screenshots will be stored in the `screenshots` folder.
+![Kernel warnings](./screenshots/01_kernel_warnings.png)
+
+### Process analysis
+
+![Process analysis](./screenshots/02_process_analysis.png)
+
+### Real-time monitoring with top
+
+![Top monitoring](./screenshots/03_top_monitoring.png)
+
+### Memory analysis
+
+![Memory analysis](./screenshots/04_memory_analysis.png)
+
+The screenshots come from the original Ubuntu activity. Personal system identifiers were removed before publishing them in the portfolio.
 
 ## Project context
 
