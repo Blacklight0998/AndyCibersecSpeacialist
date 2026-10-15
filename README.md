@@ -32,6 +32,7 @@ Google Cybersecurity Professional Certificate — Google / Coursera | 2026
 Google Cybersecurity + CompTIA Security+ Dual Credential — Google & CompTIA | 2026
 
 Microsoft Certified: Security Operations Analyst Associate (SC-200) — Planned exam: January 2027
+
 ---
 
 ## Learning Roadmap
