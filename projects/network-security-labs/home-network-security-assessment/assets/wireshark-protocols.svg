@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420">
+  <rect width="1100" height="420" fill="#0d1117"/>
+  <style>.t{fill:#f0f6fc;font-family:Arial,sans-serif}.s{fill:#8b949e;font-family:Arial,sans-serif}.b{fill:#161b22;stroke:#3fb950;stroke-width:2;rx:14;ry:14}.l{stroke:#8b949e;stroke-width:2}</style>
+  <text x="550" y="44" class="t" font-size="28" text-anchor="middle">Wireshark Traffic Analysis - Protocols Observed</text>
+  <rect x="65" y="105" width="170" height="90" class="b"/><text x="150" y="146" class="t" font-size="25" text-anchor="middle">TCP</text><text x="150" y="174" class="s" font-size="15" text-anchor="middle">Reliable transport</text>
+  <rect x="265" y="105" width="170" height="90" class="b"/><text x="350" y="146" class="t" font-size="25" text-anchor="middle">TLS 1.2</text><text x="350" y="174" class="s" font-size="15" text-anchor="middle">Encrypted sessions</text>
+  <rect x="465" y="105" width="170" height="90" class="b"/><text x="550" y="146" class="t" font-size="25" text-anchor="middle">SSDP</text><text x="550" y="174" class="s" font-size="15" text-anchor="middle">Device discovery</text>
+  <rect x="665" y="105" width="170" height="90" class="b"/><text x="750" y="146" class="t" font-size="25" text-anchor="middle">IGMP</text><text x="750" y="174" class="s" font-size="15" text-anchor="middle">Multicast management</text>
+  <rect x="865" y="105" width="170" height="90" class="b"/><text x="950" y="146" class="t" font-size="25" text-anchor="middle">ICMPv6</text><text x="950" y="174" class="s" font-size="15" text-anchor="middle">IPv6 control traffic</text>
+  <line x1="150" y1="220" x2="950" y2="220" class="l"/>
+  <text x="550" y="270" class="t" font-size="22" text-anchor="middle">Assessment result</text>
+  <text x="550" y="308" class="s" font-size="18" text-anchor="middle">Traffic was consistent with normal residential activity during the capture period.</text>
+  <text x="550" y="342" class="s" font-size="18" text-anchor="middle">No obvious malicious traffic was identified in the analyzed sample.</text>
+  <text x="550" y="382" class="s" font-size="14" text-anchor="middle">Based on the protocols documented in the original university project.</text>
+</svg>
