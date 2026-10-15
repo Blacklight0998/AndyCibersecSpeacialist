@@ -1,84 +1,51 @@
 # Connectivity and Performance Tests
 
-## Objective
-
-The connectivity tests were performed to validate communication between the local host, the default gateway, public Internet destinations and DNS-resolved domains.
-
 ## Default Gateway Test
 
-A `ping` test was performed against the local router at `192.168.1.1`.
+A `ping` test was performed against the local router at `192.168.1.1` to confirm local Layer 3 connectivity.
 
-Purpose:
+![Ping to default gateway](./screenshots/06_ping_gateway.png)
 
-- Verify that the local wireless interface was working
-- Confirm Layer 3 communication with the gateway
-- Check for packet loss inside the local network
-
-Result:
-
-The gateway responded successfully, confirming local connectivity between the assessed computer and the router.
+The router replied to all four packets with no packet loss.
 
 ## Internet Connectivity Test
 
-A second `ping` test targeted the public IP address `8.8.8.8`.
+A second test used the public address `8.8.8.8` to confirm connectivity beyond the local network without depending on DNS.
 
-Purpose:
+![Ping to 8.8.8.8](./screenshots/05_ping_8888.png)
 
-- Confirm routing beyond the local network
-- Verify that the router was forwarding traffic toward the Internet
-- Distinguish local connectivity problems from DNS problems
-
-Result:
-
-The public destination responded, confirming external IP connectivity.
+The destination replied successfully with no packet loss.
 
 ## DNS Resolution Test
 
-A third test used `ping google.com`.
+The next test used `ping google.com` to verify both Internet access and DNS resolution.
 
-Purpose:
+![Ping to Google](./screenshots/04_ping_google.png)
 
-- Validate domain-name resolution
-- Confirm that DNS services were functioning
-- Verify end-to-end connectivity using a hostname instead of an IP address
-
-Result:
-
-The domain resolved successfully and returned replies.
+The domain resolved to an IP address and returned replies successfully.
 
 ## Route Analysis
 
-The Windows `tracert` command was used to observe the path from the local computer toward a Google destination.
+Windows `tracert` was used to follow the route from the local computer toward Google.
 
-Observed behavior:
+![Tracert to Google](./screenshots/10_tracert_google.png)
 
-- The first hop was the local default gateway
-- Later hops belonged to the ISP path
-- Some intermediate hops did not answer ICMP requests
-- The final destination was still reached successfully
-
-The timeouts on intermediate hops were not treated as proof of failure because routers may be configured not to respond to traceroute probes.
+The first hop was the local gateway. Some intermediate hops timed out, but the destination was reached. These timeouts were not treated as proof of a network failure because intermediate routers may ignore traceroute probes.
 
 ## Bandwidth Test
 
-A Speedtest measurement reported approximately:
+The project also documented a Speedtest result of approximately:
 
 - **Download:** 155.20 Mbps
 - **Upload:** 157.18 Mbps
 - **Latency:** 4 ms
 
-The measured throughput was consistent with the documented 150 Mbps residential service and showed no obvious performance limitation during the test period.
+The result was consistent with the documented 150 Mbps residential service.
 
-## Operational Observation
+## What I Practiced
 
-No QoS prioritization was identified in the analyzed network. The original project noted that QoS could be considered in the future for latency-sensitive services such as video calls, online classes or gaming when multiple devices compete for bandwidth.
-
-## Skills Demonstrated
-
-- `ping`
-- `tracert`
-- Default gateway validation
-- DNS troubleshooting
-- Basic routing analysis
-- Network performance testing
-- Interpreting latency and throughput
+- Testing the local gateway
+- Separating DNS problems from general connectivity problems
+- Reading packet-loss and latency results
+- Following a route with `tracert`
+- Basic network troubleshooting
