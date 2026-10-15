@@ -10,6 +10,16 @@ The original academic work covered device inventory, IPv4 addressing, DHCP, conn
 
 All household-specific personal details and unnecessary identifiers have been omitted from this portfolio version.
 
+## Visual Overview
+
+![Sanitized home network topology](./assets/network-topology.svg)
+
+The visual above recreates the documented residential topology without exposing household-specific identifiers.
+
+![Wireshark protocols observed](./assets/wireshark-protocols.svg)
+
+The protocol visual summarizes the traffic types documented during the Wireshark analysis without publishing raw network identifiers.
+
 ## Project Structure
 
 | Section | Description |
