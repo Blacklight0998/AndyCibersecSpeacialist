@@ -21,6 +21,34 @@ I also practiced using groups to assign access in a more organized way instead o
 
 The privilege section showed why `sudo` is preferable to sharing the root password. Each administrator can use their own account while privileged actions remain easier to audit.
 
+## Evidence
+
+### User creation and `/etc/passwd`
+
+![User creation and passwd](./screenshots/01_user_creation_and_passwd.png)
+
+### Group management
+
+![Group management](./screenshots/02_group_management.png)
+
+### Privilege test
+
+![Privilege test](./screenshots/03_privilege_test.png)
+
+### Active session review
+
+![Session audit](./screenshots/04_session_audit.png)
+
+### Password aging policy
+
+![Password aging](./screenshots/05_password_aging.png)
+
+### Account cleanup
+
+![Account cleanup](./screenshots/06_account_cleanup.png)
+
+The screenshots come from the original Ubuntu activity. Personal system identifiers were censored before publishing them in the portfolio.
+
 ## Session review
 
 I used `who` and `w` to review active users and basic system activity. In a real investigation, an unknown user or an unexpected process such as `nmap` could be a reason to investigate further.
@@ -32,12 +60,6 @@ For the lab, password expiration was configured with `chage` using a 45-day maxi
 ## Cleanup
 
 At the end of the activity, the temporary users and group were removed and `/etc/passwd` and `/etc/group` were checked to confirm the cleanup.
-
-## Evidence
-
-The original activity contains Ubuntu terminal screenshots. For the portfolio I keep selected screenshots with personal system identifiers censored.
-
-Screenshots will be stored in the `screenshots` folder.
 
 ## Project context
 
