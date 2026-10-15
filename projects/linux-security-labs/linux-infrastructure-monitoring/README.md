@@ -8,6 +8,16 @@ The project used three Linux virtual machines configured on the same network. Th
 
 The final section of the academic project also proposed a centralized monitoring architecture using Netdata, Prometheus and Grafana. That observability stack is documented here as a **proposed architecture**, not as a completed deployment.
 
+## Visual Overview
+
+![Linux virtual machine architecture](./assets/linux-vm-architecture.svg)
+
+The diagram summarizes the implemented three-VM lab and the static networking configuration performed with Netplan.
+
+![Linux monitoring and automation flow](./assets/monitoring-flow.svg)
+
+The monitoring visual separates the implemented Bash/cron workflow from the proposed Netdata → Prometheus → Grafana architecture.
+
 ## Project Structure
 
 - [Virtualization and Networking](./virtualization-and-networking.md)
