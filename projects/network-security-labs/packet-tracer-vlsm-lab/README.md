@@ -24,6 +24,8 @@ The lab contains 3 routers. Each router manages two LANs:
 
 The routers are also connected to each other using three point-to-point networks.
 
+![Packet Tracer topology and router CLI](./screenshots/01_topology_and_router_cli.png)
+
 ## Main network
 
 `10.10.0.0/21`
@@ -48,19 +50,25 @@ More details: [Subnetting plan](./subnetting-plan.md)
 
 The routers were configured with the first usable addresses for the LANs and addresses from the /30 networks for the serial links.
 
+![Router interface configuration](./screenshots/02_interface_configuration.png)
+
 [View router addressing](./router-addressing.md)
 
 ## Testing
 
 After configuring the topology, connectivity was tested between PCs and their gateways and between routers.
 
+![Connectivity tests](./screenshots/04_connectivity_tests.png)
+
 [View testing notes](./testing.md)
 
 ## Evidence
 
-The original project includes Packet Tracer screenshots showing the topology, interface configuration, routing information and connectivity tests.
+The screenshots above come from the original Packet Tracer activity. I kept only a few examples instead of uploading the complete university report.
 
-A small set of screenshots is kept in the `screenshots` folder instead of uploading the complete university report.
+Additional routing and interface evidence:
+
+![Routing and interface output](./screenshots/03_routing_and_interfaces.png)
 
 ## What I learned
 
