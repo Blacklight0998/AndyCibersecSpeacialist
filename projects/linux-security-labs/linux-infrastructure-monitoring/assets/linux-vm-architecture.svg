@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430">
+  <rect width="1100" height="430" fill="#0d1117"/>
+  <style>.t{fill:#f0f6fc;font-family:Arial,sans-serif}.s{fill:#8b949e;font-family:Arial,sans-serif}.vm{fill:#161b22;stroke:#58a6ff;stroke-width:2;rx:14;ry:14}.net{fill:#161b22;stroke:#a371f7;stroke-width:2;rx:14;ry:14}.l{stroke:#8b949e;stroke-width:3}</style>
+  <text x="550" y="44" class="t" font-size="28" text-anchor="middle">Linux Lab - Virtualized Network Architecture</text>
+  <rect x="425" y="82" width="250" height="72" class="net"/><text x="550" y="115" class="t" font-size="23" text-anchor="middle">Virtual Network</text><text x="550" y="140" class="s" font-size="15" text-anchor="middle">Static addressing with Netplan</text>
+  <line x1="550" y1="154" x2="550" y2="205" class="l"/><line x1="210" y1="205" x2="890" y2="205" class="l"/>
+  <line x1="210" y1="205" x2="210" y2="245" class="l"/><line x1="550" y1="205" x2="550" y2="245" class="l"/><line x1="890" y1="205" x2="890" y2="245" class="l"/>
+  <rect x="85" y="245" width="250" height="105" class="vm"/><text x="210" y="282" class="t" font-size="24" text-anchor="middle">Ubuntu VM 1</text><text x="210" y="310" class="s" font-size="16" text-anchor="middle">Static IP + monitoring</text><text x="210" y="334" class="s" font-size="16" text-anchor="middle">Primary node</text>
+  <rect x="425" y="245" width="250" height="105" class="vm"/><text x="550" y="282" class="t" font-size="24" text-anchor="middle">Ubuntu VM 2</text><text x="550" y="310" class="s" font-size="16" text-anchor="middle">Static IP</text><text x="550" y="334" class="s" font-size="16" text-anchor="middle">Peer connectivity</text>
+  <rect x="765" y="245" width="250" height="105" class="vm"/><text x="890" y="282" class="t" font-size="24" text-anchor="middle">Ubuntu VM 3</text><text x="890" y="310" class="s" font-size="16" text-anchor="middle">Static IP</text><text x="890" y="334" class="s" font-size="16" text-anchor="middle">Peer connectivity</text>
+  <text x="550" y="395" class="s" font-size="17" text-anchor="middle">Connectivity validated with Linux networking commands and ICMP tests.</text>
+</svg>
