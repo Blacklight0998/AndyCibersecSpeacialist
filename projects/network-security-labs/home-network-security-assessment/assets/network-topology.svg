@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="460" viewBox="0 0 1100 460">
+  <rect width="1100" height="460" fill="#0d1117"/>
+  <style>
+    .box{fill:#161b22;stroke:#58a6ff;stroke-width:2;rx:14;ry:14}.iot{fill:#161b22;stroke:#d29922;stroke-width:2;rx:14;ry:14}.txt{fill:#f0f6fc;font-family:Arial,sans-serif;font-size:22px;text-anchor:middle}.sub{fill:#8b949e;font-family:Arial,sans-serif;font-size:16px;text-anchor:middle}.line{stroke:#8b949e;stroke-width:3}
+  </style>
+  <text x="550" y="42" class="txt" font-size="28">Home Network - Observed Topology</text>
+  <rect x="455" y="70" width="190" height="62" class="box"/><text x="550" y="108" class="txt">Internet / ISP</text>
+  <line x1="550" y1="132" x2="550" y2="170" class="line"/>
+  <rect x="445" y="170" width="210" height="70" class="box"/><text x="550" y="202" class="txt">Main Router</text><text x="550" y="226" class="sub">DHCP + Wi-Fi</text>
+  <line x1="550" y1="240" x2="550" y2="285" class="line"/>
+  <line x1="130" y1="285" x2="970" y2="285" class="line"/>
+  <line x1="130" y1="285" x2="130" y2="320" class="line"/><line x1="340" y1="285" x2="340" y2="320" class="line"/><line x1="550" y1="285" x2="550" y2="320" class="line"/><line x1="760" y1="285" x2="760" y2="320" class="line"/><line x1="970" y1="285" x2="970" y2="320" class="line"/>
+  <rect x="50" y="320" width="160" height="82" class="box"/><text x="130" y="354" class="txt">Laptop</text><text x="130" y="382" class="sub">Trusted endpoint</text>
+  <rect x="260" y="320" width="160" height="82" class="box"/><text x="340" y="354" class="txt">Phones</text><text x="340" y="382" class="sub">User devices</text>
+  <rect x="470" y="320" width="160" height="82" class="iot"/><text x="550" y="354" class="txt">Smart TV</text><text x="550" y="382" class="sub">IoT / media</text>
+  <rect x="680" y="320" width="160" height="82" class="iot"/><text x="760" y="354" class="txt">Smart Speaker</text><text x="760" y="382" class="sub">IoT device</text>
+  <rect x="890" y="320" width="160" height="82" class="iot"/><text x="970" y="354" class="txt">Set-top Box</text><text x="970" y="382" class="sub">Media device</text>
+</svg>
