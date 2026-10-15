@@ -4,7 +4,7 @@
 
 **Cybersecurity Engineering Student | SOC & Blue Team Focus**
 
-Networking · Linux · Windows · Security Operations · Python
+Networking · Linux · Windows · Security Operations · Python · Java
 
 [LinkedIn](PEGA_AQUI_TU_LINKEDIN) · [Email](mailto:andyvear98@gmail.com)
 
@@ -12,26 +12,61 @@ Networking · Linux · Windows · Security Operations · Python
 
 ---
 
-## whoime
+## whoami
 
-I´m a Cybersecurity Engineering student at Universidad Fidélitas, a currently building practical skills for an entry-level position, building my own portfolio. My main focuse is obtain a position in Security Operations, Blue Team or cybersecurity engineering.
+I´m a Cybersecurity Engineering student at Universidad Fidélitas, currently building practical skills for an entry-level position, building my own portfolio. My main focus is to obtain a position in Security Operations, Blue Team or cybersecurity engineering.
 
-I have professional experience working in multinational environments in dental aligner industry , following strict procedures,management of patiente information, quality standards and performance metrics in a hard-peace enviroment. I am developing a porrfolio through networking, system administration, security monitoring and documented technical laboratories.
+I have professional experience working in multinational environments in dental aligner industry , following strict procedures,management of patiente information, quality standards and performance metrics. Working with a multi-diciplinary team in a fast-peaced enviroment. 
+
+I am developing a portfolio through networking, system administration, security monitoring and documented technical laboratories.
 
 My current objective is to obtain my first professional cybersecurity position while continuing my university degree.
 
+
+---
+## Languages
+
+Spanish - Native
+
+English - B2+(professional working proficiency)
+
+Portuguese - Basic
+
+---
+## Soft skills 
+
+Analytical thinking 
+
+Team Work 
+
+Working under pressure
+
+Time managment
+
+Continous Learning
+
 ---
 
-## Current cibersecurity formation
+## Current Cybersecurity Education
+
 Cibersecurity Engineer (graduation expected 2028)
 
-CompTIA Security+ (SY0-701) — CompTIA | October 2026
+CompTIA Security+ (SY0-701) — CompTIA | (exam october 27)
 
 Google Cybersecurity Professional Certificate — Google / Coursera | 2026
 
-Google Cybersecurity + CompTIA Security+ Dual Credential — Google & CompTIA | 2026
+Google Cybersecurity + CompTIA Security+ Dual Credential — Google & CompTIA | (exam october 27)
 
 Microsoft Certified: Security Operations Analyst Associate (SC-200) — Planned exam: January 2027
+
+
+### Cisco Networking Academy
+
+CCNA: Introduction to Networks — 2026
+
+Operating Systems Basics — 2026
+
+Computer Hardware Basics — 2026
 
 ---
 
@@ -47,11 +82,10 @@ Microsoft Certified: Security Operations Analyst Associate (SC-200) — Planned 
 | SIEM and security monitoring | ⚪ Planned | SIEM Labs |
 | Incident response | 🟡 In progress | Blacklight Enterprise Lab |
 | Cloud security | ⚪ Planned | Azure Security Lab |
-| CompTIA Security+ | 🟡 In progress | Certification |
 
 ---
 
-## 🗂️ Project Repositories
+##  Project Repositories
 
 ### [Blacklight Enterprise Lab](https://github.com/Blacklight0998/Blacklight-Enterprise-Lab)
 
@@ -85,7 +119,7 @@ Python exercises and small projects adapted to cybersecurity use cases.
 Networking, traffic analysis and security assessment projects.
 
 **Current project:**
-- [🏠 Home Network Security & Traffic Analysis](./projects/network-security-labs/home-network-security-assessment/)
+- [ Home Network Security & Traffic Analysis](./projects/network-security-labs/home-network-security-assessment/)
 
 **Skills:** IPv4 · DHCP · DNS · Wireshark · TCP/IP · Wireless Security · Network Segmentation · Troubleshooting
 
@@ -103,7 +137,7 @@ Networking, traffic analysis and security assessment projects.
 Linux administration, networking, system monitoring and automation exercises.
 
 **Current project:**
-- [🖥️ Linux Infrastructure & Monitoring Lab](./projects/linux-security-labs/linux-infrastructure-monitoring/)
+- [Linux Infrastructure & Monitoring Lab](./projects/linux-security-labs/linux-infrastructure-monitoring/)
 
 **Implemented skills:** Ubuntu VMs · Netplan · Static IPv4 · Linux CLI · Users & Groups · 
 
@@ -151,7 +185,7 @@ Hands-on detection and investigation exercises using SIEM platforms commonly use
 
 ##  Featured Project
 
-### 🏠 Home Network Security & Traffic Analysis
+###  Home Network Security & Traffic Analysis
 
 A university group project adapted for the portfolio, focused on analyzing a residential network from a networking and security perspective.
 
@@ -170,7 +204,7 @@ A university group project adapted for the portfolio, focused on analyzing a res
 
 ---
 
-## 🧠 Technical Knowledge
+##  Technical Knowledge
 
 ### Networking
 
@@ -194,31 +228,36 @@ A university group project adapted for the portfolio, focused on analyzing a res
 
 ### Security
 
-- CIA triad
 - Threats, vulnerabilities and risks
 - Basic attack surfaces
 - Security controls
-- Introduction to network reconnaissance
+- Network reconnaissance
 - Incident analysis fundamentals
 - SIEM fundamentals
-- Basic Linux service and port inspection
+- Linux service and port inspection
 
 ---
 
 ##  Tools
 
-![Cisco Packet Tracer](https://img.shields.io/badge/Cisco%20Packet%20Tracer-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Visual Studio Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+Cisco Packet Trace
+
+Wireshark
+
+Linux
+
+Python
+
+GitHub
+
+Visual Studio Code
+
+Oracle VM Virtual Box
 
 
 ---
 
-## 📌 Portfolio Standards
-
+##  Portfolio Standards
 Each published project will include:
 
 - Business or technical scenario
