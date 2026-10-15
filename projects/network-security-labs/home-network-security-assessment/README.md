@@ -4,33 +4,33 @@ University group project adapted into a cybersecurity portfolio case study.
 
 ## Project Overview
 
-This project documents the assessment of a real residential network with the objective of understanding its infrastructure, validating connectivity, reviewing wireless security, analyzing network traffic and identifying potential security weaknesses.
+This project documents the assessment of a real residential network. The work included device inventory, IPv4 addressing, DHCP, connectivity tests, wireless security, bandwidth measurements, Wireshark traffic analysis, redundancy, vulnerability identification and network topology.
 
-The original academic work covered device inventory, IPv4 addressing, DHCP, connectivity testing, wireless security, bandwidth measurement, Wireshark traffic analysis, redundancy, vulnerability identification and network topology.
+Some identifying values from the original environment were redacted, but the screenshots below come from the real project.
 
-All household-specific personal details and unnecessary identifiers have been omitted from this portfolio version.
+## Original Network Topology
 
-## Real Project Evidence
+![Original home network topology](./screenshots/11_network_topology.png)
 
-This portfolio uses screenshots taken during the original project rather than recreated diagrams. Only identifying or unnecessary sensitive information is redacted.
+The network used a single router as the central point for Internet access and local connectivity. The connected devices included a laptop, mobile phones, a smart speaker and TV equipment.
 
-[View the screenshots folder](./screenshots/)
+## Wireshark Capture
 
-The evidence set includes Windows network configuration, Wi-Fi security details, gateway and Internet connectivity tests, route tracing, Wireshark packet captures and the original network topology.
+![Wireshark traffic capture](./screenshots/07_wireshark_capture_1.png)
+
+This capture was taken during the project while reviewing traffic generated on the residential network. More packet captures and protocol notes are available in the [Wireshark analysis](./wireshark-analysis.md).
 
 ## Project Structure
 
 | Section | Description |
 |---|---|
-| [Network Architecture](./network-architecture.md) | Devices, IPv4 layout, DHCP and current vs. improved topology |
-| [Connectivity & Performance](./connectivity-tests.md) | Gateway, Internet, DNS, `tracert` and bandwidth validation |
-| [Wireshark Analysis](./wireshark-analysis.md) | TCP, TLS 1.2, SSDP, IGMP and ICMPv6 observations |
-| [Security Findings](./security-findings.md) | Segmentation, IoT exposure, wireless security and availability risks |
-| [Recommendations](./recommendations.md) | Practical hardening and segmentation improvements |
+| [Network Architecture](./network-architecture.md) | Network layout, IPv4, DHCP and Wi-Fi configuration |
+| [Connectivity & Performance](./connectivity-tests.md) | Gateway, Internet, DNS and `tracert` tests |
+| [Wireshark Analysis](./wireshark-analysis.md) | Packet captures and observed protocols |
+| [Security Findings](./security-findings.md) | Segmentation, IoT and availability risks |
+| [Recommendations](./recommendations.md) | Improvements proposed after the assessment |
 
 ## Environment
-
-The assessed network contained:
 
 - Fiber Internet connection
 - Wireless router providing routing, Wi-Fi and DHCP
@@ -39,7 +39,7 @@ The assessed network contained:
 - Smart TV / set-top box
 - IoT smart speaker
 
-## Tools and Techniques
+## Tools Used
 
 - Wireshark
 - Cisco Packet Tracer
@@ -47,122 +47,53 @@ The assessed network contained:
 - `ping`
 - `tracert`
 - Speedtest
-- IPv4 addressing analysis
-- DHCP analysis
-- Wireless security review
-- Basic risk assessment
 
-## Key Technical Results
+## Main Results
 
 ### Connectivity
 
-The assessment successfully validated:
-
-- Communication with the default gateway
-- External connectivity using a public IP
-- DNS resolution using a domain name
-- End-to-end routing using `tracert`
+The tests confirmed communication with the local gateway, Internet connectivity, DNS resolution and a complete route to an external destination.
 
 ### Wireless Security
 
-The assessed Wi-Fi environment used:
+The Wi-Fi connection used WPA2-Personal with CCMP on the 5 GHz band and IEEE 802.11ac.
 
-- WPA2-Personal
-- CCMP encryption
-- 5 GHz
-- IEEE 802.11ac
+### Performance
 
-### Network Performance
-
-A documented Speedtest result showed approximately:
+The documented Speedtest result was approximately:
 
 - **155.20 Mbps download**
 - **157.18 Mbps upload**
 - **4 ms latency**
 
-### Wireshark
+### Traffic Analysis
 
-Observed protocols included:
+The packet captures included TCP, TLS 1.2, SSDP, IGMP and ICMPv6 traffic. During the capture period we did not identify an obvious malicious pattern.
 
-- TCP
-- TLS 1.2
-- SSDP
-- IGMP
-- ICMPv6
-
-The captured traffic was consistent with normal residential activity during the observation period, and no obvious malicious pattern was identified in the analyzed capture.
-
-## Security Findings
+## Main Security Findings
 
 | Finding | Risk | Priority |
 |---|---|---:|
-| Flat LAN with no segmentation | Compromised devices can communicate with other local systems | Medium |
+| All devices on one LAN | A compromised device could communicate with other local systems | Medium |
 | IoT devices on trusted LAN | Larger lateral exposure | Medium |
 | Possible unnecessary WPS | Additional wireless attack surface | Medium |
 | Router firmware maintenance | Potential exposure to unpatched issues | Medium |
 | Single ISP/router dependency | Complete loss of connectivity during failure | Low |
 
-The most significant architectural improvement identified was separating trusted endpoints from IoT and multimedia devices.
+The main improvement proposed was to separate IoT and multimedia devices from trusted endpoints using a guest network or VLAN when possible.
 
-## Current vs. Recommended Design
+## Skills Practiced
 
-```text
-CURRENT
-
-Internet
-   |
-Router
-   |
-   +-- Laptop
-   +-- Phones
-   +-- Smart Speaker
-   +-- TV / Set-top Box
-
-All devices share the same LAN.
-
-            ↓
-
-RECOMMENDED
-
-Internet
-   |
-Router / Firewall
-   |
-   +-- Trusted Network
-   |     +-- Laptop
-   |     +-- Phones
-   |
-   +-- IoT / Guest Network
-         +-- Smart Speaker
-         +-- TV / Set-top Box
-```
-
-## Skills Demonstrated
-
-- Network inventory and documentation
-- IPv4 addressing and subnet awareness
-- DHCP and default-gateway analysis
-- DNS troubleshooting
-- Connectivity validation
-- Route analysis
-- Wireless-security review
+- IPv4 and DHCP analysis
+- Default gateway and DNS troubleshooting
+- `ping` and `tracert`
+- Wi-Fi security review
 - Wireshark packet analysis
 - Protocol identification
 - Network segmentation concepts
-- Availability and redundancy analysis
-- Basic vulnerability and risk assessment
-- Technical recommendations
-
-## Lessons Learned
-
-This project helped connect networking fundamentals with defensive security. A network can function correctly while still having architectural weaknesses such as lack of segmentation, excessive trust between device types or a single point of failure.
-
-The Wireshark portion also demonstrated the importance of understanding normal network behavior before attempting to identify abnormal or malicious traffic.
+- Basic risk assessment
+- Technical documentation
 
 ## Project Context
 
-This was completed as a university group project for a networking course. This portfolio version focuses on the technical and cybersecurity-related aspects of the work rather than reproducing the academic report.
-
-## Privacy Note
-
-The complete original report is intentionally not published because it contains personal names and identifiable details from a real residential environment. This sanitized documentation preserves the technical work while reducing unnecessary exposure of private information.
+This was completed as a university group project for a networking course. This portfolio version keeps the original technical evidence while removing personal or unnecessary identifying information.
