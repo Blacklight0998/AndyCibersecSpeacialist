@@ -210,6 +210,12 @@ The project focused on analyzing a residential network and understanding its con
 - SIEM fundamentals
 - Linux service and port inspection
 
+## AI-assisted workflows
+
+- Prompt design for technical research, troubleshooting and documentation
+- AI-assisted code explanation, review and learning
+- Experience using ChatGPT, Claude, GitHub Copilot and Grok as technical support tools
+
 ---
 
 ## Tools
