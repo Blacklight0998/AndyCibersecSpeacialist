@@ -14,9 +14,9 @@ Networking · Linux · Windows · Security Operations · Python · Java
 
 ## whoami
 
-I´m a Cybersecurity Engineering student at Universidad Fidélitas, currently building practical skills for an entry-level position, building my own portfolio. My main focus is to obtain a position in Security Operations, Blue Team or cybersecurity engineering.
+I'm a Cybersecurity Engineering student at Universidad Fidélitas, currently building practical skills for an entry-level position and working on my own portfolio. My main focus is to obtain a position in Security Operations, Blue Team or cybersecurity engineering.
 
-I have professional experience working in multinational environments in dental aligner industry , following strict procedures,management of patiente information, quality standards and performance metrics. Working with a multi-diciplinary team in a fast-peaced enviroment. 
+I have professional experience working in multinational environments in the dental aligner industry, following strict procedures, management of patient information, quality standards and performance metrics. Working with a multidisciplinary team in a fast-paced environment. 
 
 I am developing a portfolio through networking, system administration, security monitoring and documented technical laboratories.
 
@@ -41,15 +41,15 @@ Team Work
 
 Working under pressure
 
-Time managment
+Time management
 
-Continous Learning
+Continuous Learning
 
 ---
 
 ## Current Cybersecurity Education
 
-Cibersecurity Engineer (graduation expected 2028)
+Cybersecurity Engineering (graduation expected 2028)
 
 CompTIA Security+ (SY0-701) — CompTIA | (exam october 27)
 
@@ -240,7 +240,7 @@ A university group project adapted for the portfolio, focused on analyzing a res
 
 ##  Tools
 
-Cisco Packet Trace
+Cisco Packet Tracer
 
 Wireshark
 
