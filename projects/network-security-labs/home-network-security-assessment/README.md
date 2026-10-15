@@ -10,15 +10,13 @@ The original academic work covered device inventory, IPv4 addressing, DHCP, conn
 
 All household-specific personal details and unnecessary identifiers have been omitted from this portfolio version.
 
-## Visual Overview
+## Real Project Evidence
 
-![Sanitized home network topology](./assets/network-topology.svg)
+This portfolio uses screenshots taken during the original project rather than recreated diagrams. Only identifying or unnecessary sensitive information is redacted.
 
-The visual above recreates the documented residential topology without exposing household-specific identifiers.
+[View the screenshots folder](./screenshots/)
 
-![Wireshark protocols observed](./assets/wireshark-protocols.svg)
-
-The protocol visual summarizes the traffic types documented during the Wireshark analysis without publishing raw network identifiers.
+The evidence set includes Windows network configuration, Wi-Fi security details, gateway and Internet connectivity tests, route tracing, Wireshark packet captures and the original network topology.
 
 ## Project Structure
 
@@ -167,4 +165,4 @@ This was completed as a university group project for a networking course. This p
 
 ## Privacy Note
 
-The complete original report is intentionally not published because it contains personal names and identifiable details from a real residential environment. This sanitized version preserves the technical evidence while reducing unnecessary exposure of private information.
+The complete original report is intentionally not published because it contains personal names and identifiable details from a real residential environment. This sanitized documentation preserves the technical work while reducing unnecessary exposure of private information.
