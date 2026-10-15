@@ -1,12 +1,12 @@
-# 🐧 Linux Security Labs
+# Linux Security Labs
 
-Hands-on Linux administration, networking, monitoring and security-focused exercises.
+ Linux administration, networking, monitoring and security-focused projects.
 
 ## Projects
 
-### 🖥️ [Linux Infrastructure & Monitoring Lab](./linux-infrastructure-monitoring/)
+### [Linux Infrastructure & Monitoring Lab](./linux-infrastructure-monitoring/)
 
-University group project adapted for this portfolio. The lab covers Linux virtualization, static networking, system administration, monitoring, automation and a proposed centralized observability architecture.
+College group project adapted for this portfolio. This  lab covers Linux virtualization, static networking, system administration, monitoring and automation.
 
 **Implemented topics:** Ubuntu virtual machines · Netplan · static IP addressing · ping testing · Linux CLI · users and groups · process monitoring · cron · `ss -tunlp`
 
@@ -26,4 +26,4 @@ Linux administration lab focused on user identity, groups, privilege management,
 
 ## Purpose
 
-These labs document practical Linux skills that support system administration, Blue Team operations and cybersecurity infrastructure work.
+These labs document Linux practices that support system administration, Blue Team operations and cybersecurity infrastructure work.
