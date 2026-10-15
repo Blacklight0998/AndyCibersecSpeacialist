@@ -19,4 +19,8 @@ The purpose was to confirm that the addressing plan was applied correctly and th
 4. Interfaces were active.
 5. Ping tests returned successful replies.
 
+## Evidence
+
+![Connectivity tests in Packet Tracer](./screenshots/04_connectivity_tests.png)
+
 The screenshots used in the portfolio come from the original Packet Tracer activity instead of recreating the lab only for GitHub.
