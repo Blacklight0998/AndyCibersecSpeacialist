@@ -1,12 +1,14 @@
-# 🖥️ Linux Infrastructure & Monitoring Lab
+# Linux Infrastructure & Monitoring Lab
 
-University group project adapted into a Linux and cybersecurity portfolio case study.
+College group project adapted into a Linux and cybersecurity portfolio case study.
 
 ## Overview
 
-The project used three Linux virtual machines configured on the same network. The practical work included VM cloning, static IP configuration with Netplan, connectivity validation, Linux command-line administration, users and groups, system monitoring, scheduled tasks and network/service inspection.
+For this project we used three Linux virtual machines configured on the same network. The practical lab included VM cloning, static IP configuration with Netplan, connectivity validation, Linux command-line administration, users and groups, system monitoring, scheduled tasks and network/service inspection.
 
 The final section of the academic project also proposed a centralized monitoring architecture using Netdata, Prometheus and Grafana. That observability stack is documented here as a **proposed architecture**, not as a completed deployment.
+
+Note:  Personal information from the original academic document is intentionally omitted.
 
 ## Project Structure
 
@@ -50,6 +52,3 @@ Proposed centralized observability
 Netdata → Prometheus → Grafana
 ```
 
-## Project Context
-
-This was a university group project. This portfolio version focuses on the Linux administration, networking, monitoring and cybersecurity-relevant portions of the work. Personal information from the original academic document is intentionally omitted.
