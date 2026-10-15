@@ -118,10 +118,11 @@ Python exercises and small projects adapted to cybersecurity use cases.
 
 Networking, traffic analysis and security assessment projects.
 
-**Current project:**
+**Current projects:**
 - [ Home Network Security & Traffic Analysis](./projects/network-security-labs/home-network-security-assessment/)
+- [ Packet Tracer VLSM Network Lab](./projects/network-security-labs/packet-tracer-vlsm-lab/)
 
-**Skills:** IPv4 · DHCP · DNS · Wireshark · TCP/IP · Wireless Security · Network Segmentation · Troubleshooting
+**Skills:** IPv4 · VLSM · DHCP · DNS · Wireshark · TCP/IP · Packet Tracer · Wireless Security · Network Segmentation · Troubleshooting
 
 **topics:**
 - ARP analysis
@@ -211,6 +212,7 @@ A university group project adapted for the portfolio, focused on analyzing a res
 - TCP/IP fundamentals
 - OSI model
 - IPv4 addressing
+- VLSM subnetting
 - Network encapsulation
 - Basic switching and routing concepts
 - Cisco IOS navigation
