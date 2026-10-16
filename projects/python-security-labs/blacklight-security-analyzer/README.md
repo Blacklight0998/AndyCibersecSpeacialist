@@ -1,10 +1,10 @@
 # Blacklight Security Analyzer
 
-Python project focused on basic reconnaissance and security assessment in authorized lab environments.
+This is a Python learning project for basic reconnaissance in authorized lab environments.
 
-The idea of this project is to combine DNS enumeration, TCP port scanning and simple reporting into one workflow instead of keeping each exercise as a separate script.
+It started from two small exercises I had already built: one for DNS subdomain enumeration and another for TCP SYN scanning with Scapy. Keeping them as separate scripts worked for practice, but combining them into one workflow made more sense and gave me a better reason to organize the code.
 
-## Workflow
+## Current workflow
 
 ```text
 Target domain
@@ -22,21 +22,17 @@ TCP port scan
 JSON report
 ```
 
-## What it does
+## What the program does
 
 1. Reads possible subdomains from a wordlist.
-2. Resolves DNS `A` records using a configurable DNS server.
-3. Collects the IP addresses found during enumeration.
-4. Scans a selected list of TCP ports against the discovered hosts.
-5. Saves the results in a JSON report for later review.
+2. Queries their DNS `A` records through a configurable DNS resolver.
+3. Collects the IP addresses it finds.
+4. Runs a SYN scan against a small list of common ports on those discovered hosts.
+5. Saves the results to a JSON report.
 
-## Why I built it this way
+The default port list is intentionally small because this is a learning project, not an attempt to build a replacement for tools such as Nmap.
 
-The first versions of these exercises were separate university labs: a DNS enumeration script and a TCP SYN scanner. I combined them into one project because they belong to the same reconnaissance workflow and can produce one set of findings.
-
-This project is also a way for me to practice moving from small scripts into a more organized Python security tool.
-
-## Structure
+## Project structure
 
 ```text
 blacklight-security-analyzer/
@@ -51,23 +47,27 @@ blacklight-security-analyzer/
 └── requirements.txt
 ```
 
-## Skills practiced
+`main.py` controls the flow, while the DNS, scanning and reporting functions are kept in separate modules. This was one of the main changes from the original standalone scripts.
 
-- Python
-- DNS resolution
-- DNS `A` records
-- Wordlist-based enumeration
+## What I practiced
+
+- Python functions and modules
+- DNS resolution and `A` records
+- Reading a wordlist from a file
 - TCP SYN scanning
+- TCP flags and basic response interpretation
 - Scapy
-- Basic reconnaissance
 - Error handling
 - JSON reporting
-- Modular Python structure
 
-## Notes
+## Where it came from
 
-The port scanner is based on the TCP SYN exercise I previously created with Scapy. The DNS module comes from a university exercise where I changed the resolver, expanded the wordlist and added better error handling while troubleshooting the script.
+The DNS part came from a university exercise where the first version was not returning useful results. I changed the resolver, expanded the wordlist and added clearer error output while troubleshooting it.
 
-This is a learning project, not a production security scanner.
+The scanner came from a separate Scapy exercise that originally scanned localhost. I reused the same basic SYN-scan logic as one stage of this project.
 
-> Use only against systems you own or have explicit permission to test.
+## Limitations / next improvements
+
+Right now the tool is intentionally basic. Some improvements I would like to work on later are better input validation, configurable port lists, cleaner summaries and more useful reporting.
+
+This is a learning project and should only be used against systems I own or have explicit permission to test.
