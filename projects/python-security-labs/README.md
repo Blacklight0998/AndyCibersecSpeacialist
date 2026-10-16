@@ -1,88 +1,83 @@
-# 🐍 Python Security Labs
+# Python Cybersecurity Toolkit
 
-Small Python exercises adapted to cybersecurity concepts and defensive security practice.
+Collection of small Python security exercises grouped as one project.
 
-## Projects
+I built these modules while practicing how Python can be applied to cybersecurity topics such as cryptography, network reconnaissance and DNS enumeration.
 
-### 🔐 AES-EAX Login Demo
+## Modules
 
-A basic authentication lab that demonstrates:
+| Module | Purpose | Main concepts |
+|---|---|---|
+| [AES-EAX Login Demo](./crypto/aes_eax_login_demo.py) | Practice authenticated encryption in a login-style exercise | AES-EAX, nonce, authentication tag, secure random generation |
+| [AES-EAX CTF Challenge](./crypto/aes_eax_ctf_challenge.py) | Small encryption/decryption challenge | AES-128, integrity verification, encoding |
+| [TCP SYN Port Scanner](./network/scapy_syn_port_scanner.py) | Localhost port discovery exercise | Scapy, TCP SYN, SYN-ACK, RST-ACK |
+| [DNS Subdomain Enumeration](./network/dns_subdomain_enumeration.py) | Wordlist-based DNS enumeration | DNS, A records, dnspython, troubleshooting |
 
-- Secure random password generation with `secrets`
-- AES-128 encryption
-- AES-EAX authenticated encryption
-- Nonce usage
-- Authentication tags for integrity verification
-- Basic login validation
+## Project structure
 
-[View `aes_eax_login_demo.py`](./aes_eax_login_demo.py)
+```text
+python-security-labs/
+├── README.md
+├── crypto/
+│   ├── aes_eax_login_demo.py
+│   └── aes_eax_ctf_challenge.py
+├── network/
+│   ├── scapy_syn_port_scanner.py
+│   └── dns_subdomain_enumeration.py
+├── wordlists/
+│   └── subdomains.txt
+└── screenshots/
+```
 
-> Educational note: real-world password storage should normally use secure password hashing rather than reversible encryption.
+## Cryptography practice
 
----
+The AES exercises were used to understand authenticated encryption and how confidentiality and integrity can be combined.
 
-### 🚩 AES-EAX CTF Challenge
+Things practiced:
 
-A small capture-the-flag style exercise focused on encrypting and recovering a secret message using AES-EAX.
-
-It demonstrates:
-
-- UTF-8 encoding before encryption
-- Random AES-128 key generation
-- AES-EAX authenticated encryption
+- AES-128
+- AES-EAX
+- Random key generation
 - Nonce handling
-- Integrity verification using an authentication tag
-- Exception handling when verification fails
-- Recovery of a CTF-style flag after successful decryption
+- Authentication tags
+- UTF-8 encoding
+- Encryption and decryption
 
-[View `aes_eax_ctf_challenge.py`](./aes_eax_ctf_challenge.py)
+> The login demo is an educational exercise. Real password storage should normally use secure password hashing instead of reversible encryption.
 
----
+## Network reconnaissance practice
 
-### 🌐 Scapy TCP SYN Port Scanner
+The networking modules focus on basic reconnaissance concepts in controlled environments.
 
-A localhost network-scanning exercise that demonstrates:
+The TCP SYN scanner uses Scapy and is configured to scan `127.0.0.1`.
 
-- Packet creation with Scapy
-- IPv4 and TCP packet construction
-- TCP SYN scanning
-- SYN-ACK interpretation for open ports
-- RST-ACK interpretation for closed ports
-- Basic network reconnaissance concepts
+The DNS module reads possible subdomains from a wordlist and queries DNS `A` records using a custom resolver. During the original activity I changed the resolver to Google DNS (`8.8.8.8`), expanded the wordlist and added error output because the first version was not returning useful results.
 
-The script is configured to scan `127.0.0.1`, keeping the exercise focused on the local host.
+Things practiced:
 
-[View `scapy_syn_port_scanner.py`](./scapy_syn_port_scanner.py)
-
----
-
-### DNS Subdomain Enumeration Lab
-
-Small Python and DNS exercise focused on wordlist-based subdomain enumeration and troubleshooting.
-
-It demonstrates:
-
-- Custom DNS resolver configuration
+- TCP/IP
+- TCP flags
+- Scapy packet creation
+- DNS resolution
 - DNS `A` record queries
-- Reading targets from a wordlist
-- Basic subdomain enumeration
-- Handling common DNS lookup errors
-- Troubleshooting a script that was not returning useful results
+- Wordlist-based enumeration
+- File handling
+- Error handling
+- Troubleshooting
 
-[View project](./dns-subdomain-enumeration/)
-
----
-
-## Technologies
+## Tools and libraries
 
 - Python
 - PyCryptodome
 - Scapy
 - dnspython
-- TCP/IP
-- DNS
-- AES-EAX
 
-## Purpose
+## What I learned
 
-These labs document my progression in Python while applying university programming concepts to cybersecurity use cases.
+These exercises helped me connect Python programming with security and networking concepts instead of practicing the language only with general programming examples.
+
+They also helped me understand how small scripts can be useful for testing, troubleshooting and learning how protocols behave.
+
+## Safety
+
+The network scripts are intended for educational use in local or authorized environments only.
