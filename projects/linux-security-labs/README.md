@@ -1,94 +1,78 @@
 # Linux Security Administration & Monitoring Lab
 
-This portfolio project consolidates several related university Linux activities into one security-focused case study.
+This section groups several Linux activities that originally came from different university exercises.
 
-The original exercises were completed separately, but they all support the same practical objective: learning how to administer, monitor and investigate a Linux environment from a cybersecurity perspective.
+I decided to keep them under one larger project because they follow a natural progression: first setting up and administering Linux systems, then working with users and privileges, and finally reviewing logs and system activity when something looks wrong.
+
+The activities were not all completed as one continuous lab, so I keep that distinction clear. The screenshots and findings still come from the original work.
 
 ## Project flow
 
 ```text
-Linux infrastructure setup
-        ↓
-System administration
-        ↓
-Users and access control
-        ↓
-Monitoring and automation
-        ↓
-Log and process analysis
-        ↓
-Basic security investigation
+Linux setup
+   ↓
+Administration
+   ↓
+Users and privileges
+   ↓
+Monitoring
+   ↓
+Logs and troubleshooting
 ```
 
-## Phase 1 — Infrastructure, Administration & Monitoring
+## 1. Infrastructure, Administration & Monitoring
 
-[View phase](./linux-infrastructure-monitoring/)
+[View this section](./linux-infrastructure-monitoring/)
 
-This phase covers the Linux environment and day-to-day administration tasks used as the foundation for the project.
+This part covers the Linux environment itself and the day-to-day administration work I practiced.
 
-**Work included:**
+Main topics:
 
-- Three Ubuntu virtual machines
-- Static IPv4 configuration with Netplan
-- Connectivity testing
+- three Ubuntu virtual machines
+- static IPv4 configuration with Netplan
+- connectivity testing
 - Linux CLI and file management
-- Process and memory monitoring
-- Network and service inspection
-- Cron-based monitoring automation
-- Users and groups
-- Proposed Netdata → Prometheus → Grafana monitoring architecture
+- users and groups
+- process and memory monitoring
+- `ip a` and `ss -tunlp`
+- cron-based monitoring
 
-> The Netdata, Prometheus and Grafana section is a proposed architecture from the academic project, not a completed deployment.
+The original academic project also included a proposed Netdata → Prometheus → Grafana monitoring design. I kept it in the portfolio as a proposal, not as something I deployed.
 
-## Phase 2 — Identity & Access Management
+## 2. Identity & Access Management
 
-[View phase](./linux-user-access-management/)
+[View this section](./linux-user-access-management/)
 
-This phase focuses on account management, privileges and traceability.
+Here the focus was on who has access to the system and how privileges are managed.
 
-**Work included:**
+I practiced:
 
-- User creation and removal
-- `/etc/passwd` and `/etc/group` review
-- Group membership
+- creating and removing users
+- reviewing `/etc/passwd` and `/etc/group`
+- groups and membership
 - `su` and `sudo`
-- Session review with `who` and `w`
-- Password aging with `chage`
-- Account cleanup
+- active-session review with `who` and `w`
+- password aging with `chage`
+- cleaning up temporary accounts
 
-## Phase 3 — System Diagnosis & Log Analysis
+## 3. System Diagnosis & Log Analysis
 
-[View phase](./linux-system-diagnosis/)
+[View this section](./linux-system-diagnosis/)
 
-This phase applies Linux administration knowledge to troubleshooting and basic investigation.
+This part was closer to the kind of troubleshooting and basic investigation I want to get better at for Blue Team work.
 
-**Work included:**
+I reviewed:
 
-- `auth.log`, `kern.log` and `dmesg` review
-- Failed authentication analysis
-- Process inspection with `ps`
-- Real-time monitoring with `top`
-- Memory review with `free`
-- Evaluation of kernel and virtualization warnings
-- Evidence-based conclusions instead of assuming the cause of an issue
+- `auth.log`
+- `kern.log`
+- `dmesg`
+- failed authentication attempts
+- running processes with `ps`
+- CPU/process activity with `top`
+- memory usage with `free`
 
-## Security relevance
+One useful lesson from this activity was not to assume that every warning or failed login explains the problem. I had to compare the logs with process and resource evidence before writing a conclusion.
 
-The project connects Linux fundamentals with tasks that are useful in Blue Team and SOC work:
+## Why this matters to me
 
-- account and privilege review
-- active-session auditing
-- log analysis
-- process inspection
-- service and port inspection
-- system health monitoring
-- troubleshooting
-- basic incident investigation
-
-## Tools and commands
-
-`Ubuntu` · `Netplan` · `sudo` · `su` · `chage` · `who` · `w` · `ps` · `top` · `free` · `dmesg` · `grep` · `find` · `ss` · `cron`
-
-## Project context
-
-The material comes from university Linux and operating-system activities and has been reorganized here as one portfolio case study. Screenshots and findings remain based on the original exercises; the portfolio structure does not imply that every activity was executed as one continuous lab environment.
+Linux is one of the areas I want to be comfortable with before applying for SOC/Blue Team roles. These exercises are still basic, but they gave me hands-on practice with accounts, permissions, logs, processes, services and troubleshooting instead of only reading about them.
