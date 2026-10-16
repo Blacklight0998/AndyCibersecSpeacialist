@@ -1,0 +1,10 @@
+subdomain1
+subdomain2
+test
+admin
+sub1
+www
+mail
+blog
+dev
+api
