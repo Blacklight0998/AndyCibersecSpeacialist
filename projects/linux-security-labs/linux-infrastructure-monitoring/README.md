@@ -1,16 +1,18 @@
-# Linux Infrastructure & Monitoring Lab
+# Phase 1 — Linux Infrastructure, Administration & Monitoring
 
-College group project adapted into a Linux and cybersecurity portfolio case study.
+This section is part of the broader [Linux Security Administration & Monitoring Lab](../).
+
+It documents the infrastructure and administration foundation used to practice Linux skills with security relevance.
 
 ## Overview
 
-For this project we used three Linux virtual machines configured on the same network. The practical lab included VM cloning, static IP configuration with Netplan, connectivity validation, Linux command-line administration, users and groups, system monitoring, scheduled tasks and network/service inspection.
+For this academic project we used three Linux virtual machines configured on the same network. The practical work included VM cloning, static IP configuration with Netplan, connectivity validation, Linux command-line administration, users and groups, system monitoring, scheduled tasks and network/service inspection.
 
-The final section of the academic project also proposed a centralized monitoring architecture using Netdata, Prometheus and Grafana. That observability stack is documented here as a **proposed architecture**, not as a completed deployment.
+The final section also proposed a centralized monitoring architecture using Netdata, Prometheus and Grafana. That observability stack is documented here as a **proposed architecture**, not as a completed deployment.
 
-Note:  Personal information from the original academic document is intentionally omitted.
+Personal information from the original academic document is intentionally omitted.
 
-## Project Structure
+## Technical sections
 
 - [Virtualization and Networking](./virtualization-and-networking.md)
 - [Linux Administration](./linux-administration.md)
@@ -18,7 +20,7 @@ Note:  Personal information from the original academic document is intentionally
 - [Users, Groups and Network Inspection](./users-groups-network.md)
 - [Proposed Observability Stack](./observability-stack.md)
 
-## Skills Demonstrated
+## Skills practiced
 
 - Linux virtual machine administration
 - Static IPv4 configuration with Netplan
@@ -33,7 +35,7 @@ Note:  Personal information from the original academic document is intentionally
 - Basic infrastructure monitoring concepts
 - Prometheus/Grafana architecture planning
 
-## Lab Progression
+## Progression
 
 ```text
 3 Ubuntu VMs
@@ -51,4 +53,3 @@ Users, groups and open-port inspection
 Proposed centralized observability
 Netdata → Prometheus → Grafana
 ```
-
