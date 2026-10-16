@@ -55,7 +55,7 @@ I'm building this portfolio through university projects, personal labs and cyber
 |---|---|---|
 | [Linux Security Labs](./projects/linux-security-labs/) | Linux administration, users and permissions, log analysis, monitoring and networking | Ubuntu, Netplan, sudo, chage, cron |
 | [Network Security Labs](./projects/network-security-labs/) | VLSM, traffic analysis, troubleshooting and home network security | Wireshark, Packet Tracer, ping, tracert |
-| [Python Security Labs](./projects/python-security-labs/) | Security-related Python exercises and small tools | Python, Scapy, AES-EAX |
+| [Python Security Labs](./projects/python-security-labs/) | Security-related Python exercises and small tools | Python, Scapy, AES-EAX, dnspython |
 | [Blacklight Enterprise Lab](https://github.com/Blacklight0998/Blacklight-Enterprise-Lab) | Homelab focused on SOC, networking and defensive security | VirtualBox, Windows, Linux |
 
 ---
@@ -119,15 +119,17 @@ Small Python projects used to practice programming in a cybersecurity context.
 - [AES-EAX Login Demo](./projects/python-security-labs/aes_eax_login_demo.py)
 - [AES-EAX CTF Challenge](./projects/python-security-labs/aes_eax_ctf_challenge.py)
 - [Scapy TCP SYN Port Scanner](./projects/python-security-labs/scapy_syn_port_scanner.py)
+- [DNS Subdomain Enumeration Lab](./projects/python-security-labs/dns-subdomain-enumeration/)
 
 ### Things practiced
 
 - Python
 - Scapy
-- TCP/IP
+- TCP/IP and DNS
 - AES-EAX
 - Secure random generation
 - Network reconnaissance
+- DNS resolution and subdomain enumeration
 - Basic CTF concepts
 
 ---
