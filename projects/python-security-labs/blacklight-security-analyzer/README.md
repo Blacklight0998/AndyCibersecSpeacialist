@@ -1,4 +1,4 @@
-# Blacklight Security Analyzer
+# Python Network Reconnaissance Tool
 
 This is a Python learning project for basic reconnaissance in authorized lab environments.
 
