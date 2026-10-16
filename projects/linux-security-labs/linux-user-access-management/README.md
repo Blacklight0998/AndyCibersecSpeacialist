@@ -1,6 +1,8 @@
-# Linux User & Access Management Lab
+# Phase 2 — Linux Identity & Access Management
 
-This lab came from a university simulation focused on user administration and access control in Ubuntu.
+This section is part of the broader [Linux Security Administration & Monitoring Lab](../).
+
+It focuses on account management, privileges and traceability in Ubuntu.
 
 ## What I worked on
 
@@ -51,7 +53,7 @@ The screenshots come from the original Ubuntu activity. Personal system identifi
 
 ## Session review
 
-I used `who` and `w` to review active users and basic system activity. In a real investigation, an unknown user or an unexpected process such as `nmap` could be a reason to investigate further.
+I used `who` and `w` to review active users and basic system activity. In a real investigation, an unknown user or an unexpected process could be a reason to investigate further.
 
 ## Password policy
 
@@ -63,4 +65,4 @@ At the end of the activity, the temporary users and group were removed and `/etc
 
 ## Project context
 
-This was completed as part of the Basic Operating Systems course at Universidad Fidélitas. The portfolio version keeps the Linux administration and security-related parts of the activity.
+This activity came from the Basic Operating Systems course at Universidad Fidélitas and is presented here as the access-control phase of the larger Linux portfolio project.
