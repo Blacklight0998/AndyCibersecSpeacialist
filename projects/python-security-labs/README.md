@@ -4,7 +4,7 @@ This section is where I keep the Python work that is most relevant to cybersecur
 
 I started with small exercises from class and then tried to organize them in a way that makes technical sense instead of listing every script as a separate project.
 
-## Blacklight Security Analyzer
+## Python Network Reconnaissance Tool
 
 [View project](./blacklight-security-analyzer/)
 
