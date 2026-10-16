@@ -39,6 +39,7 @@ I prefer to keep the projects practical and honest about what is implemented, wh
 | [Home Network Security & Traffic Analysis](./projects/network-security-labs/home-network-security-assessment/) | Real residential network analysis, Wireshark, connectivity testing and security findings | Wireshark, ping, tracert, Windows networking tools |
 | [Packet Tracer VLSM Network Lab](./projects/network-security-labs/packet-tracer-vlsm-lab/) | Subnetting, router addressing and connectivity testing | Cisco Packet Tracer, VLSM, IPv4 |
 | [Python Network Reconnaissance Tool](./projects/python-security-labs/python-network-reconnaissance-tool/) | DNS enumeration, TCP scanning and JSON reporting in one Python workflow | Python, Scapy, dnspython, JSON |
+| [Azure Red Team vs Blue Team Lab](./projects/azure-red-blue-team-lab/) | In-progress university lab combining Azure, Python automation, attack simulation and defensive monitoring | Azure, Python, Nmap, Scapy, NSG |
 | [Enterprise SOC Lab](https://github.com/Blacklight0998/Blacklight-Enterprise-Lab) | Ongoing homelab for SOC, networking and defensive security practice | VirtualBox, Windows, Linux |
 
 ---
@@ -100,6 +101,16 @@ I keep the [AES-EAX Cryptography Lab](./projects/python-security-labs/cryptograp
 
 ---
 
+## Azure Red Team vs Blue Team Lab
+
+[View project](./projects/azure-red-blue-team-lab/)
+
+This is a university group project currently in development. The goal is to build an Azure-based lab where Red Team and Blue Team activities can be tested in a controlled environment, with Python used to automate part of both sides.
+
+The project brief includes Azure virtual machines, NSGs, Nmap, Scapy, authentication testing, operating-system auditing, traffic monitoring, firewall hardening and event logging. I am documenting it as work in progress and will only mark features as completed when they are actually implemented and tested.
+
+---
+
 ## Enterprise SOC Lab
 
 [View repository](https://github.com/Blacklight0998/Blacklight-Enterprise-Lab)
@@ -150,10 +161,10 @@ Wireshark · Cisco Packet Tracer · Linux · Python · Git / GitHub · Visual St
 | Linux | 🟡 In progress |
 | Python for cybersecurity | 🟡 In progress |
 | Incident Response | 🟡 In progress |
+| Azure / Cloud Security | 🟡 In progress |
 | Windows / Active Directory | ⚪ Planned |
 | SIEM and Security Monitoring | ⚪ Planned |
 | SOC Incident Lab | ⚪ Planned |
-| Cloud Security / Azure | ⚪ Planned |
 
 ---
 
