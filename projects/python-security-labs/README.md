@@ -6,7 +6,7 @@ I started with small exercises from class and then tried to organize them in a w
 
 ## Python Network Reconnaissance Tool
 
-[View project](./blacklight-security-analyzer/)
+[View project](./python-network-reconnaissance-tool/)
 
 This is the main Python project in the portfolio right now.
 
