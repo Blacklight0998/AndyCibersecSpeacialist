@@ -1,8 +1,8 @@
 # Packet Tracer VLSM Network Lab
 
-University networking practice made in Cisco Packet Tracer.
+This was a university networking activity built in Cisco Packet Tracer.
 
-The goal of this lab was to take the network `10.10.0.0/21` and divide it using VLSM for several LANs with different host requirements. The topology uses 3 routers connected with point-to-point links.
+The starting network was `10.10.0.0/21`. The goal was to divide it with VLSM so several LANs with different host requirements could fit without wasting too much address space, then apply the plan to a topology with three routers.
 
 ## What I worked on
 
@@ -16,21 +16,11 @@ The goal of this lab was to take the network `10.10.0.0/21` and divide it using 
 
 ## Topology
 
-The lab contains 3 routers. Each router manages two LANs:
-
-- Router 1: Subnet A and B
-- Router 2: Subnet C and D
-- Router 3: Subnet E and F
-
-The routers are also connected to each other using three point-to-point networks.
+Each router connects two LANs, and the routers are linked to each other with three /30 point-to-point networks.
 
 ![Packet Tracer topology and router CLI](./screenshots/01_topology_and_router_cli.png)
 
-## Main network
-
-`10.10.0.0/21`
-
-The subnets were assigned from largest to smallest to avoid wasting address space.
+## Addressing plan
 
 | Network | Hosts needed | Network | Prefix |
 |---|---:|---|---:|
@@ -44,11 +34,13 @@ The subnets were assigned from largest to smallest to avoid wasting address spac
 | R2-R3 | 2 | 10.10.4.68 | /30 |
 | R1-R3 | 2 | 10.10.4.72 | /30 |
 
-More details: [Subnetting plan](./subnetting-plan.md)
+I assigned the largest LANs first and used /30 networks for the router-to-router links because they only needed two usable addresses.
 
-## Router addressing
+[View the full subnetting plan](./subnetting-plan.md)
 
-The routers were configured with the first usable addresses for the LANs and addresses from the /30 networks for the serial links.
+## Router configuration
+
+The router interfaces were configured from the VLSM plan instead of treating the subnet calculations as a separate paper exercise.
 
 ![Router interface configuration](./screenshots/02_interface_configuration.png)
 
@@ -56,24 +48,20 @@ The routers were configured with the first usable addresses for the LANs and add
 
 ## Testing
 
-After configuring the topology, connectivity was tested between PCs and their gateways and between routers.
+After the addressing was in place, I checked connectivity between PCs and their gateways and between routers.
 
 ![Connectivity tests](./screenshots/04_connectivity_tests.png)
 
 [View testing notes](./testing.md)
 
-## Evidence
-
-The screenshots above come from the original Packet Tracer activity. I kept only a few examples instead of uploading the complete university report.
-
-Additional routing and interface evidence:
+Additional interface/routing evidence:
 
 ![Routing and interface output](./screenshots/03_routing_and_interfaces.png)
 
 ## What I learned
 
-This practice helped me understand why VLSM is useful when networks need different amounts of addresses. It also helped me practice how subnetting connects with the actual router configuration instead of only calculating networks on paper.
+The useful part of this exercise was seeing how the subnetting plan affected the actual topology. It helped me connect host requirements, masks, gateway addresses and router interfaces instead of thinking about each one separately.
 
-## Project context
+## Context
 
-This was completed as a university group activity for the Principles of Networks and Communications course. This portfolio version only keeps the networking work and technical evidence.
+This was completed as a university group activity for the Principles of Networks and Communications course. I kept the networking work and a few screenshots from the original activity rather than uploading the full academic report.
