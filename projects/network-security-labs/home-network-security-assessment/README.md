@@ -1,99 +1,70 @@
-# 🏠 Home Network Security & Traffic Analysis
+# Home Network Security & Traffic Analysis
 
-University group project adapted into a cybersecurity portfolio case study.
+This project came from a university group assignment where we analyzed a real residential network. For the portfolio, I kept the technical work and screenshots that are useful to show what we actually tested, and removed identifying information that was not needed.
 
-## Project Overview
+## What we looked at
 
-This project documents the assessment of a real residential network. The work included device inventory, IPv4 addressing, DHCP, connectivity tests, wireless security, bandwidth measurements, Wireshark traffic analysis, redundancy, vulnerability identification and network topology.
+The project covered the home network from a few different angles:
 
-Some identifying values from the original environment were redacted, but the screenshots below come from the real project.
+- device inventory and network layout
+- IPv4 and DHCP configuration
+- local and Internet connectivity
+- DNS resolution
+- Wi-Fi security
+- bandwidth testing
+- Wireshark traffic captures
+- basic security findings and recommendations
 
-## Original Network Topology
+## Network topology
 
 ![Original home network topology](./screenshots/11_network_topology.png)
 
-The network used a single router as the central point for Internet access and local connectivity. The connected devices included a laptop, mobile phones, a smart speaker and TV equipment.
+The environment used one router for Internet access, Wi-Fi and DHCP. The network included a laptop, mobile devices, a smart speaker and TV equipment.
 
-## Wireshark Capture
+## Real traffic capture
 
 ![Wireshark traffic capture](./screenshots/07_wireshark_capture_1.png)
 
-This capture was taken during the project while reviewing traffic generated on the residential network. More packet captures and protocol notes are available in the [Wireshark analysis](./wireshark-analysis.md).
+I kept the original capture instead of recreating something cleaner for GitHub. More notes are in the [Wireshark analysis](./wireshark-analysis.md).
 
-## Project Structure
+## Project notes
 
-| Section | Description |
+| Section | What is there |
 |---|---|
-| [Network Architecture](./network-architecture.md) | Network layout, IPv4, DHCP and Wi-Fi configuration |
-| [Connectivity & Performance](./connectivity-tests.md) | Gateway, Internet, DNS and `tracert` tests |
-| [Wireshark Analysis](./wireshark-analysis.md) | Packet captures and observed protocols |
-| [Security Findings](./security-findings.md) | Segmentation, IoT and availability risks |
-| [Recommendations](./recommendations.md) | Improvements proposed after the assessment |
+| [Network Architecture](./network-architecture.md) | Topology, addressing, DHCP and Wi-Fi details |
+| [Connectivity & Performance](./connectivity-tests.md) | Gateway, Internet, DNS and `tracert` testing |
+| [Wireshark Analysis](./wireshark-analysis.md) | Packet captures and protocols seen during the test |
+| [Security Findings](./security-findings.md) | Main risks we identified |
+| [Recommendations](./recommendations.md) | Improvements proposed after the review |
 
-## Environment
+## Main results
 
-- Fiber Internet connection
-- Wireless router providing routing, Wi-Fi and DHCP
-- Laptop
-- Three mobile devices
-- Smart TV / set-top box
-- IoT smart speaker
+The connectivity tests confirmed access to the local gateway, Internet connectivity and DNS resolution.
 
-## Tools Used
+The Wi-Fi connection used WPA2-Personal with CCMP on 5 GHz and 802.11ac.
 
-- Wireshark
-- Cisco Packet Tracer
-- `ipconfig`
-- `ping`
-- `tracert`
-- Speedtest
+The documented Speedtest result was about:
 
-## Main Results
+- 155.20 Mbps download
+- 157.18 Mbps upload
+- 4 ms latency
 
-### Connectivity
+In Wireshark we saw TCP, TLS 1.2, SSDP, IGMP and ICMPv6 traffic. We did not see an obvious malicious pattern during the capture window, but the sample was limited and I would not treat that as proof that the network was completely clean.
 
-The tests confirmed communication with the local gateway, Internet connectivity, DNS resolution and a complete route to an external destination.
+## Security observations
 
-### Wireless Security
+The biggest issue was that trusted devices and IoT/multimedia devices were all on the same LAN. That is simple for a home network, but it also means a compromised IoT device would have more direct access to other local systems.
 
-The Wi-Fi connection used WPA2-Personal with CCMP on the 5 GHz band and IEEE 802.11ac.
+Other points we reviewed were WPS, router firmware maintenance and the fact that one router/ISP was a single point of failure.
 
-### Performance
+The main recommendation was to separate IoT and multimedia devices from trusted endpoints using a guest network or VLAN when the equipment supports it.
 
-The documented Speedtest result was approximately:
+## What I got from this project
 
-- **155.20 Mbps download**
-- **157.18 Mbps upload**
-- **4 ms latency**
+This was one of the first activities where networking stopped feeling like only subnetting and theory. I had to look at a real configuration, test connectivity, inspect actual packets and then explain what the results meant from a security point of view.
 
-### Traffic Analysis
+## Context
 
-The packet captures included TCP, TLS 1.2, SSDP, IGMP and ICMPv6 traffic. During the capture period we did not identify an obvious malicious pattern.
+The original assignment was completed as a group for a networking course. This GitHub version is a technical summary of that work and does not try to present the entire group project as individual work.
 
-## Main Security Findings
-
-| Finding | Risk | Priority |
-|---|---|---:|
-| All devices on one LAN | A compromised device could communicate with other local systems | Medium |
-| IoT devices on trusted LAN | Larger lateral exposure | Medium |
-| Possible unnecessary WPS | Additional wireless attack surface | Medium |
-| Router firmware maintenance | Potential exposure to unpatched issues | Medium |
-| Single ISP/router dependency | Complete loss of connectivity during failure | Low |
-
-The main improvement proposed was to separate IoT and multimedia devices from trusted endpoints using a guest network or VLAN when possible.
-
-## Skills Practiced
-
-- IPv4 and DHCP analysis
-- Default gateway and DNS troubleshooting
-- `ping` and `tracert`
-- Wi-Fi security review
-- Wireshark packet analysis
-- Protocol identification
-- Network segmentation concepts
-- Basic risk assessment
-- Technical documentation
-
-## Project Context
-
-This was completed as a university group project for a networking course. This portfolio version keeps the original technical evidence while removing personal or unnecessary identifying information.
+Personal and network-specific identifiers such as SSIDs, MAC addresses and similar values were censored before publishing.
