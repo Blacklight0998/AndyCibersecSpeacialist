@@ -55,7 +55,7 @@ I'm building this portfolio through university projects, personal labs and cyber
 |---|---|---|
 | [Linux Security Labs](./projects/linux-security-labs/) | Linux administration, users and permissions, log analysis, monitoring and networking | Ubuntu, Netplan, sudo, chage, cron |
 | [Network Security Labs](./projects/network-security-labs/) | VLSM, traffic analysis, troubleshooting and home network security | Wireshark, Packet Tracer, ping, tracert |
-| [Python Security Labs](./projects/python-security-labs/) | Security-related Python exercises and small tools | Python, Scapy, AES-EAX, dnspython |
+| [Python Cybersecurity Toolkit](./projects/python-security-labs/) | Cryptography, TCP scanning and DNS enumeration exercises grouped in one project | Python, Scapy, PyCryptodome, dnspython |
 | [Blacklight Enterprise Lab](https://github.com/Blacklight0998/Blacklight-Enterprise-Lab) | Homelab focused on SOC, networking and defensive security | VirtualBox, Windows, Linux |
 
 ---
@@ -110,27 +110,32 @@ Networking projects focused on understanding how networks work and how they can 
 
 ---
 
-## Python Security Labs
+## Python Cybersecurity Toolkit
 
-Small Python projects used to practice programming in a cybersecurity context.
+A single Python project that groups several small security exercises I have built while learning Python for cybersecurity.
 
-### Current labs
+### Modules
 
-- [AES-EAX Login Demo](./projects/python-security-labs/aes_eax_login_demo.py)
-- [AES-EAX CTF Challenge](./projects/python-security-labs/aes_eax_ctf_challenge.py)
-- [Scapy TCP SYN Port Scanner](./projects/python-security-labs/scapy_syn_port_scanner.py)
-- [DNS Subdomain Enumeration Lab](./projects/python-security-labs/dns-subdomain-enumeration/)
+- AES-EAX Login Demo
+- AES-EAX CTF Challenge
+- Scapy TCP SYN Port Scanner
+- DNS Subdomain Enumeration
 
 ### Things practiced
 
 - Python
-- Scapy
-- TCP/IP and DNS
 - AES-EAX
 - Secure random generation
-- Network reconnaissance
-- DNS resolution and subdomain enumeration
-- Basic CTF concepts
+- Scapy
+- TCP/IP
+- TCP flags
+- DNS resolution
+- DNS `A` records
+- Wordlist-based enumeration
+- Basic reconnaissance
+- Error handling and troubleshooting
+
+[View project](./projects/python-security-labs/)
 
 ---
 
