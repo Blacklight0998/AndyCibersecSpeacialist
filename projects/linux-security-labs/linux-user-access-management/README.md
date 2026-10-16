@@ -1,27 +1,25 @@
 # Phase 2 — Linux Identity & Access Management
 
-This section is part of the broader [Linux Security Administration & Monitoring Lab](../).
+This is the access-control part of the larger [Linux Security Administration & Monitoring Lab](../).
 
-It focuses on account management, privileges and traceability in Ubuntu.
+The exercise was based on a small company scenario where different users needed their own accounts instead of sharing a generic login.
 
-## What I worked on
+## What I did
 
-- Creating individual Linux users with home directories
-- Reviewing user entries in `/etc/passwd`
-- Creating and managing groups
-- Adding users to specific groups
-- Testing privileged actions with `su` and `sudo`
-- Reviewing active sessions with `who` and `w`
-- Configuring password expiration with `chage`
-- Removing temporary accounts and groups when they were no longer needed
+- created Linux users with home directories
+- reviewed entries in `/etc/passwd`
+- created and managed groups
+- added users to groups
+- tested privileged actions with `su` and `sudo`
+- reviewed active sessions with `who` and `w`
+- configured password aging with `chage`
+- removed the temporary accounts and groups at the end
 
-## Security concepts practiced
+## Why the exercise was useful
 
-The activity focused on why individual accounts are better than shared generic accounts. Using personal accounts improves traceability because administrative actions can be linked to a specific user.
+The part I found most relevant was traceability. A shared administrator account may be convenient, but it makes it harder to know who did what. Using individual accounts and `sudo` makes administrative actions easier to associate with a specific user.
 
-I also practiced using groups to assign access in a more organized way instead of configuring permissions user by user.
-
-The privilege section showed why `sudo` is preferable to sharing the root password. Each administrator can use their own account while privileged actions remain easier to audit.
+Groups also made more sense after using them in the lab. Instead of assigning access one person at a time, they provide a cleaner way to organize permissions for users with the same role.
 
 ## Evidence
 
@@ -41,28 +39,18 @@ The privilege section showed why `sudo` is preferable to sharing the root passwo
 
 ![Session audit](./screenshots/04_session_audit.png)
 
-### Password aging policy
+### Password aging
 
 ![Password aging](./screenshots/05_password_aging.png)
 
-### Account cleanup
+### Cleanup
 
 ![Account cleanup](./screenshots/06_account_cleanup.png)
 
-The screenshots come from the original Ubuntu activity. Personal system identifiers were censored before publishing them in the portfolio.
+For the password-policy exercise I used a 45-day maximum password age and a 5-day warning period.
 
-## Session review
+The screenshots are from the original Ubuntu activity. Personal system identifiers were censored before publishing them.
 
-I used `who` and `w` to review active users and basic system activity. In a real investigation, an unknown user or an unexpected process could be a reason to investigate further.
+## Context
 
-## Password policy
-
-For the lab, password expiration was configured with `chage` using a 45-day maximum age and a 5-day warning period.
-
-## Cleanup
-
-At the end of the activity, the temporary users and group were removed and `/etc/passwd` and `/etc/group` were checked to confirm the cleanup.
-
-## Project context
-
-This activity came from the Basic Operating Systems course at Universidad Fidélitas and is presented here as the access-control phase of the larger Linux portfolio project.
+This came from the Basic Operating Systems course at Universidad Fidélitas. I kept it as part of the larger Linux project because identity, privileges and session review are directly related to the administration and investigation work in the other sections.
