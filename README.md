@@ -53,35 +53,42 @@ I'm building this portfolio through university projects, personal labs and cyber
 
 | Project | What I worked on | Tools |
 |---|---|---|
-| [Linux Security Labs](./projects/linux-security-labs/) | Linux administration, users and permissions, log analysis, monitoring and networking | Ubuntu, Netplan, sudo, chage, cron |
+| [Linux Security Administration & Monitoring Lab](./projects/linux-security-labs/) | Linux administration, access control, monitoring, log analysis and troubleshooting | Ubuntu, Netplan, sudo, chage, cron, ps, top |
 | [Network Security Labs](./projects/network-security-labs/) | VLSM, traffic analysis, troubleshooting and home network security | Wireshark, Packet Tracer, ping, tracert |
 | [Blacklight Security Analyzer](./projects/python-security-labs/blacklight-security-analyzer/) | Integrated DNS enumeration, TCP scanning and reporting workflow | Python, Scapy, dnspython, JSON |
 | [Blacklight Enterprise Lab](https://github.com/Blacklight0998/Blacklight-Enterprise-Lab) | Homelab focused on SOC, networking and defensive security | VirtualBox, Windows, Linux |
 
 ---
 
-## Linux Security Labs
+## Linux Security Administration & Monitoring Lab
 
-Linux projects from university activities and personal practice.
+A single Linux portfolio project that consolidates related university activities into a security administration workflow.
 
-### Current projects
+### Project phases
 
-- [Linux Infrastructure & Monitoring Lab](./projects/linux-security-labs/linux-infrastructure-monitoring/)
-- [Linux System Diagnosis & Log Analysis](./projects/linux-security-labs/linux-system-diagnosis/)
-- [Linux User & Access Management Lab](./projects/linux-security-labs/linux-user-access-management/)
+1. [Infrastructure, Administration & Monitoring](./projects/linux-security-labs/linux-infrastructure-monitoring/)
+2. [Identity & Access Management](./projects/linux-security-labs/linux-user-access-management/)
+3. [System Diagnosis & Log Analysis](./projects/linux-security-labs/linux-system-diagnosis/)
+
+### Workflow
+
+`Linux infrastructure → administration → access control → monitoring → log analysis → investigation`
 
 ### Things practiced
 
 - Linux CLI
+- Static networking with Netplan
 - Users and groups
-- sudo and privilege management
+- `sudo` and privilege management
 - Password aging with `chage`
 - Session review with `who` and `w`
-- Log analysis
-- Process monitoring
-- Static networking with Netplan
-- Cron jobs
-- Basic system troubleshooting
+- Process and resource monitoring
+- `auth.log`, `kern.log` and `dmesg` review
+- Service and port inspection
+- Cron-based monitoring
+- Basic system troubleshooting and investigation
+
+[View Linux project](./projects/linux-security-labs/)
 
 ---
 
