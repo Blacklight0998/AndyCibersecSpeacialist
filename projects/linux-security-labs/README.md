@@ -1,29 +1,94 @@
-# Linux Security Labs
+# Linux Security Administration & Monitoring Lab
 
- Linux administration, networking, monitoring and security-focused projects.
+This portfolio project consolidates several related university Linux activities into one security-focused case study.
 
-## Projects
+The original exercises were completed separately, but they all support the same practical objective: learning how to administer, monitor and investigate a Linux environment from a cybersecurity perspective.
 
-### [Linux Infrastructure & Monitoring Lab](./linux-infrastructure-monitoring/)
+## Project flow
 
-College group project adapted for this portfolio. This  lab covers Linux virtualization, static networking, system administration, monitoring and automation.
+```text
+Linux infrastructure setup
+        ↓
+System administration
+        ↓
+Users and access control
+        ↓
+Monitoring and automation
+        ↓
+Log and process analysis
+        ↓
+Basic security investigation
+```
 
-**Implemented topics:** Ubuntu virtual machines · Netplan · static IP addressing · ping testing · Linux CLI · users and groups · process monitoring · cron · `ss -tunlp`
+## Phase 1 — Infrastructure, Administration & Monitoring
 
-**Proposed observability stack:** Netdata · Prometheus · Grafana
+[View phase](./linux-infrastructure-monitoring/)
 
-### [Linux System Diagnosis & Log Analysis](./linux-system-diagnosis/)
+This phase covers the Linux environment and day-to-day administration tasks used as the foundation for the project.
 
-Ubuntu troubleshooting lab focused on logs, processes and system resource checks.
+**Work included:**
 
-**Topics:** `auth.log` · `kern.log` · `dmesg` · `ps` · `top` · `free` · failed authentication review · system diagnostics
+- Three Ubuntu virtual machines
+- Static IPv4 configuration with Netplan
+- Connectivity testing
+- Linux CLI and file management
+- Process and memory monitoring
+- Network and service inspection
+- Cron-based monitoring automation
+- Users and groups
+- Proposed Netdata → Prometheus → Grafana monitoring architecture
 
-### [Linux User & Access Management Lab](./linux-user-access-management/)
+> The Netdata, Prometheus and Grafana section is a proposed architecture from the academic project, not a completed deployment.
 
-Linux administration lab focused on user identity, groups, privilege management, session review and password policies.
+## Phase 2 — Identity & Access Management
 
-**Topics:** `/etc/passwd` · groups · `su` · `sudo` · `who` · `w` · `chage` · account cleanup · traceability
+[View phase](./linux-user-access-management/)
 
-## Purpose
+This phase focuses on account management, privileges and traceability.
 
-These labs document Linux practices that support system administration, Blue Team operations and cybersecurity infrastructure work.
+**Work included:**
+
+- User creation and removal
+- `/etc/passwd` and `/etc/group` review
+- Group membership
+- `su` and `sudo`
+- Session review with `who` and `w`
+- Password aging with `chage`
+- Account cleanup
+
+## Phase 3 — System Diagnosis & Log Analysis
+
+[View phase](./linux-system-diagnosis/)
+
+This phase applies Linux administration knowledge to troubleshooting and basic investigation.
+
+**Work included:**
+
+- `auth.log`, `kern.log` and `dmesg` review
+- Failed authentication analysis
+- Process inspection with `ps`
+- Real-time monitoring with `top`
+- Memory review with `free`
+- Evaluation of kernel and virtualization warnings
+- Evidence-based conclusions instead of assuming the cause of an issue
+
+## Security relevance
+
+The project connects Linux fundamentals with tasks that are useful in Blue Team and SOC work:
+
+- account and privilege review
+- active-session auditing
+- log analysis
+- process inspection
+- service and port inspection
+- system health monitoring
+- troubleshooting
+- basic incident investigation
+
+## Tools and commands
+
+`Ubuntu` · `Netplan` · `sudo` · `su` · `chage` · `who` · `w` · `ps` · `top` · `free` · `dmesg` · `grep` · `find` · `ss` · `cron`
+
+## Project context
+
+The material comes from university Linux and operating-system activities and has been reorganized here as one portfolio case study. Screenshots and findings remain based on the original exercises; the portfolio structure does not imply that every activity was executed as one continuous lab environment.
