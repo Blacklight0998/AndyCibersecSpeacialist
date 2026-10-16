@@ -56,12 +56,31 @@ The script is configured to scan `127.0.0.1`, keeping the exercise focused on th
 
 ---
 
+### DNS Subdomain Enumeration Lab
+
+Small Python and DNS exercise focused on wordlist-based subdomain enumeration and troubleshooting.
+
+It demonstrates:
+
+- Custom DNS resolver configuration
+- DNS `A` record queries
+- Reading targets from a wordlist
+- Basic subdomain enumeration
+- Handling common DNS lookup errors
+- Troubleshooting a script that was not returning useful results
+
+[View project](./dns-subdomain-enumeration/)
+
+---
+
 ## Technologies
 
 - Python
 - PyCryptodome
 - Scapy
+- dnspython
 - TCP/IP
+- DNS
 - AES-EAX
 
 ## Purpose
