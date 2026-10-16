@@ -1,6 +1,8 @@
-# Linux System Diagnosis & Log Analysis
+# Phase 3 — Linux System Diagnosis & Log Analysis
 
-This lab came from a university simulation focused on diagnosing an Ubuntu system and reviewing possible security or performance issues.
+This section is part of the broader [Linux Security Administration & Monitoring Lab](../).
+
+It applies Linux administration knowledge to troubleshooting and basic investigation.
 
 ## What I worked on
 
@@ -46,4 +48,4 @@ The screenshots come from the original Ubuntu activity. Personal system identifi
 
 ## Project context
 
-This was completed as part of the Basic Operating Systems course at Universidad Fidélitas. This portfolio version focuses only on the technical work and evidence.
+This activity came from the Basic Operating Systems course at Universidad Fidélitas and is presented here as the diagnosis and investigation phase of the larger Linux portfolio project.
