@@ -38,8 +38,8 @@ I prefer to keep the projects practical and honest about what is implemented, wh
 | [Linux Security Administration & Monitoring Lab](./projects/linux-security-labs/) | Linux administration, access control, monitoring, logs and troubleshooting | Ubuntu, Netplan, sudo, chage, cron, ps, top |
 | [Home Network Security & Traffic Analysis](./projects/network-security-labs/home-network-security-assessment/) | Real residential network analysis, Wireshark, connectivity testing and security findings | Wireshark, ping, tracert, Windows networking tools |
 | [Packet Tracer VLSM Network Lab](./projects/network-security-labs/packet-tracer-vlsm-lab/) | Subnetting, router addressing and connectivity testing | Cisco Packet Tracer, VLSM, IPv4 |
-| [Blacklight Security Analyzer](./projects/python-security-labs/blacklight-security-analyzer/) | DNS enumeration, TCP scanning and JSON reporting in one Python workflow | Python, Scapy, dnspython, JSON |
-| [Blacklight Enterprise Lab](https://github.com/Blacklight0998/Blacklight-Enterprise-Lab) | Ongoing homelab for SOC, networking and defensive security practice | VirtualBox, Windows, Linux |
+| [Python Network Reconnaissance Tool](./projects/python-security-labs/blacklight-security-analyzer/) | DNS enumeration, TCP scanning and JSON reporting in one Python workflow | Python, Scapy, dnspython, JSON |
+| [Enterprise SOC Lab](https://github.com/Blacklight0998/Blacklight-Enterprise-Lab) | Ongoing homelab for SOC, networking and defensive security practice | VirtualBox, Windows, Linux |
 
 ---
 
@@ -82,7 +82,7 @@ Together they helped me connect network theory with both real traffic and lab co
 
 ## Python Security Projects
 
-### Blacklight Security Analyzer
+### Python Network Reconnaissance Tool
 
 I built this by combining two related exercises that made more sense as one workflow: DNS enumeration and TCP port scanning.
 
@@ -92,7 +92,7 @@ I built this by combining two related exercises that made more sense as one work
 
 This is still a learning project, but it is more useful to me than keeping the original scripts completely separate.
 
-[View Blacklight Security Analyzer](./projects/python-security-labs/blacklight-security-analyzer/)
+[View Python Network Reconnaissance Tool](./projects/python-security-labs/blacklight-security-analyzer/)
 
 ### AES-EAX Cryptography Lab
 
@@ -100,7 +100,7 @@ I keep the [AES-EAX Cryptography Lab](./projects/python-security-labs/cryptograp
 
 ---
 
-## Blacklight Enterprise Lab
+## Enterprise SOC Lab
 
 [View repository](https://github.com/Blacklight0998/Blacklight-Enterprise-Lab)
 
