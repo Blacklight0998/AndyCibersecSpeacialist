@@ -38,7 +38,7 @@ I prefer to keep the projects practical and honest about what is implemented, wh
 | [Linux Security Administration & Monitoring Lab](./projects/linux-security-labs/) | Linux administration, access control, monitoring, logs and troubleshooting | Ubuntu, Netplan, sudo, chage, cron, ps, top |
 | [Home Network Security & Traffic Analysis](./projects/network-security-labs/home-network-security-assessment/) | Real residential network analysis, Wireshark, connectivity testing and security findings | Wireshark, ping, tracert, Windows networking tools |
 | [Packet Tracer VLSM Network Lab](./projects/network-security-labs/packet-tracer-vlsm-lab/) | Subnetting, router addressing and connectivity testing | Cisco Packet Tracer, VLSM, IPv4 |
-| [Python Network Reconnaissance Tool](./projects/python-security-labs/blacklight-security-analyzer/) | DNS enumeration, TCP scanning and JSON reporting in one Python workflow | Python, Scapy, dnspython, JSON |
+| [Python Network Reconnaissance Tool](./projects/python-security-labs/python-network-reconnaissance-tool/) | DNS enumeration, TCP scanning and JSON reporting in one Python workflow | Python, Scapy, dnspython, JSON |
 | [Enterprise SOC Lab](https://github.com/Blacklight0998/Blacklight-Enterprise-Lab) | Ongoing homelab for SOC, networking and defensive security practice | VirtualBox, Windows, Linux |
 
 ---
@@ -92,7 +92,7 @@ I built this by combining two related exercises that made more sense as one work
 
 This is still a learning project, but it is more useful to me than keeping the original scripts completely separate.
 
-[View Python Network Reconnaissance Tool](./projects/python-security-labs/blacklight-security-analyzer/)
+[View Python Network Reconnaissance Tool](./projects/python-security-labs/python-network-reconnaissance-tool/)
 
 ### AES-EAX Cryptography Lab
 
