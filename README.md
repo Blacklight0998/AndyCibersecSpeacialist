@@ -55,7 +55,7 @@ I'm building this portfolio through university projects, personal labs and cyber
 |---|---|---|
 | [Linux Security Labs](./projects/linux-security-labs/) | Linux administration, users and permissions, log analysis, monitoring and networking | Ubuntu, Netplan, sudo, chage, cron |
 | [Network Security Labs](./projects/network-security-labs/) | VLSM, traffic analysis, troubleshooting and home network security | Wireshark, Packet Tracer, ping, tracert |
-| [Python Cybersecurity Toolkit](./projects/python-security-labs/) | Cryptography, TCP scanning and DNS enumeration exercises grouped in one project | Python, Scapy, PyCryptodome, dnspython |
+| [Blacklight Security Analyzer](./projects/python-security-labs/blacklight-security-analyzer/) | Integrated DNS enumeration, TCP scanning and reporting workflow | Python, Scapy, dnspython, JSON |
 | [Blacklight Enterprise Lab](https://github.com/Blacklight0998/Blacklight-Enterprise-Lab) | Homelab focused on SOC, networking and defensive security | VirtualBox, Windows, Linux |
 
 ---
@@ -110,32 +110,31 @@ Networking projects focused on understanding how networks work and how they can 
 
 ---
 
-## Python Cybersecurity Toolkit
+## Python Security Projects
 
-A single Python project that groups several small security exercises I have built while learning Python for cybersecurity.
+### Blacklight Security Analyzer
 
-### Modules
+A Python project that combines related reconnaissance tasks into one workflow instead of presenting them as separate scripts.
 
-- AES-EAX Login Demo
-- AES-EAX CTF Challenge
-- Scapy TCP SYN Port Scanner
-- DNS Subdomain Enumeration
+**Workflow:** DNS enumeration → discovered hosts → TCP port scan → JSON report
 
 ### Things practiced
 
 - Python
-- AES-EAX
-- Secure random generation
-- Scapy
-- TCP/IP
-- TCP flags
 - DNS resolution
 - DNS `A` records
+- TCP/IP and TCP flags
+- Scapy
 - Wordlist-based enumeration
 - Basic reconnaissance
-- Error handling and troubleshooting
+- Error handling
+- JSON reporting
 
-[View project](./projects/python-security-labs/)
+[View Blacklight Security Analyzer](./projects/python-security-labs/blacklight-security-analyzer/)
+
+### Supporting Cryptography Lab
+
+The [AES-EAX Cryptography Lab](./projects/python-security-labs/cryptography-lab/) keeps two related encryption exercises together as a separate learning topic rather than forcing them into the reconnaissance workflow.
 
 ---
 
