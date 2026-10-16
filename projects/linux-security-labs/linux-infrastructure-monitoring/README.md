@@ -1,18 +1,22 @@
 # Phase 1 — Linux Infrastructure, Administration & Monitoring
 
-This section is part of the broader [Linux Security Administration & Monitoring Lab](../).
+This is the first part of the larger [Linux Security Administration & Monitoring Lab](../).
 
-It documents the infrastructure and administration foundation used to practice Linux skills with security relevance.
+For this university activity we worked with three Linux virtual machines on the same network. I used this part of the project to practice the basic administration work I would need before doing anything more security-focused.
 
-## Overview
+## What I worked on
 
-For this academic project we used three Linux virtual machines configured on the same network. The practical work included VM cloning, static IP configuration with Netplan, connectivity validation, Linux command-line administration, users and groups, system monitoring, scheduled tasks and network/service inspection.
+- cloning and using Linux VMs
+- static IPv4 configuration with Netplan
+- connectivity testing with `ping`
+- Linux file and directory management
+- pipes, redirection, `grep`, `find` and regular expressions
+- process and memory monitoring
+- user and group administration
+- listening-port/service inspection with `ss -tunlp`
+- hourly monitoring with `cron`
 
-The final section also proposed a centralized monitoring architecture using Netdata, Prometheus and Grafana. That observability stack is documented here as a **proposed architecture**, not as a completed deployment.
-
-Personal information from the original academic document is intentionally omitted.
-
-## Technical sections
+More detailed notes:
 
 - [Virtualization and Networking](./virtualization-and-networking.md)
 - [Linux Administration](./linux-administration.md)
@@ -20,36 +24,12 @@ Personal information from the original academic document is intentionally omitte
 - [Users, Groups and Network Inspection](./users-groups-network.md)
 - [Proposed Observability Stack](./observability-stack.md)
 
-## Skills practiced
+## Monitoring proposal
 
-- Linux virtual machine administration
-- Static IPv4 configuration with Netplan
-- Connectivity testing with `ping`
-- File and directory management
-- Pipes and I/O redirection
-- `grep`, regular expressions and `find`
-- Process and memory monitoring
-- Scheduled monitoring with `cron`
-- User and group administration
-- Network inspection with `ip a` and `ss -tunlp`
-- Basic infrastructure monitoring concepts
-- Prometheus/Grafana architecture planning
+The academic project also included a design using Netdata, Prometheus and Grafana. I did not deploy that full stack, so I keep it documented as a proposed architecture rather than presenting it as completed work.
 
-## Progression
+That distinction matters to me because I want the portfolio to show what I actually configured versus what I only researched or designed.
 
-```text
-3 Ubuntu VMs
-     ↓
-Static networking with Netplan
-     ↓
-Linux administration fundamentals
-     ↓
-Process / memory / kernel monitoring
-     ↓
-Cron-based monitoring automation
-     ↓
-Users, groups and open-port inspection
-     ↓
-Proposed centralized observability
-Netdata → Prometheus → Grafana
-```
+## What I learned
+
+This activity gave me a better foundation for later Linux security work. Commands for users, processes, networking and logs make more sense when I have already used them to manage a system instead of only memorizing them for an exam.
