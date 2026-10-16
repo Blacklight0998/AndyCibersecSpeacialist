@@ -1,83 +1,55 @@
-# Python Cybersecurity Toolkit
+# Python Security Projects
 
-Collection of small Python security exercises grouped as one project.
+Python work focused on cybersecurity, networking and security automation.
 
-I built these modules while practicing how Python can be applied to cybersecurity topics such as cryptography, network reconnaissance and DNS enumeration.
+Instead of keeping every exercise as an individual project, I am organizing related work around larger technical goals.
 
-## Modules
+## Main Project
 
-| Module | Purpose | Main concepts |
-|---|---|---|
-| [AES-EAX Login Demo](./crypto/aes_eax_login_demo.py) | Practice authenticated encryption in a login-style exercise | AES-EAX, nonce, authentication tag, secure random generation |
-| [AES-EAX CTF Challenge](./crypto/aes_eax_ctf_challenge.py) | Small encryption/decryption challenge | AES-128, integrity verification, encoding |
-| [TCP SYN Port Scanner](./network/scapy_syn_port_scanner.py) | Localhost port discovery exercise | Scapy, TCP SYN, SYN-ACK, RST-ACK |
-| [DNS Subdomain Enumeration](./network/dns_subdomain_enumeration.py) | Wordlist-based DNS enumeration | DNS, A records, dnspython, troubleshooting |
+### [Blacklight Security Analyzer](./blacklight-security-analyzer/)
 
-## Project structure
+A Python reconnaissance workflow that combines DNS enumeration, TCP port scanning and JSON reporting into one tool.
+
+The project grew from two earlier exercises: a DNS enumeration script and a Scapy TCP SYN scanner. They were combined because both belong to the same discovery workflow and can produce one set of findings.
+
+**Current workflow:**
 
 ```text
-python-security-labs/
-├── README.md
-├── crypto/
-│   ├── aes_eax_login_demo.py
-│   └── aes_eax_ctf_challenge.py
-├── network/
-│   ├── scapy_syn_port_scanner.py
-│   └── dns_subdomain_enumeration.py
-├── wordlists/
-│   └── subdomains.txt
-└── screenshots/
+Target domain
+    |
+    v
+DNS enumeration
+    |
+    v
+Resolved hosts / IP addresses
+    |
+    v
+TCP port scanning
+    |
+    v
+JSON report
 ```
 
-## Cryptography practice
+**Skills:** Python · DNS · TCP/IP · Scapy · dnspython · reconnaissance · error handling · JSON reporting
 
-The AES exercises were used to understand authenticated encryption and how confidentiality and integrity can be combined.
+---
 
-Things practiced:
+## Supporting Lab
 
-- AES-128
-- AES-EAX
-- Random key generation
-- Nonce handling
-- Authentication tags
-- UTF-8 encoding
-- Encryption and decryption
+### [AES-EAX Cryptography Lab](./cryptography-lab/)
 
-> The login demo is an educational exercise. Real password storage should normally use secure password hashing instead of reversible encryption.
+Two related Python exercises used to understand authenticated encryption, nonces, authentication tags and integrity verification with AES-EAX.
 
-## Network reconnaissance practice
+I keep these together as a cryptography lab because they support a different learning objective from the reconnaissance project.
 
-The networking modules focus on basic reconnaissance concepts in controlled environments.
+**Skills:** Python · AES-128 · AES-EAX · PyCryptodome · secure random generation · integrity verification
 
-The TCP SYN scanner uses Scapy and is configured to scan `127.0.0.1`.
+---
 
-The DNS module reads possible subdomains from a wordlist and queries DNS `A` records using a custom resolver. During the original activity I changed the resolver to Google DNS (`8.8.8.8`), expanded the wordlist and added error output because the first version was not returning useful results.
+## Why the projects are organized this way
 
-Things practiced:
+The goal is not to present every university exercise as a separate portfolio project. Related exercises are combined when they form a logical technical workflow, while unrelated topics remain separate.
 
-- TCP/IP
-- TCP flags
-- Scapy packet creation
-- DNS resolution
-- DNS `A` record queries
-- Wordlist-based enumeration
-- File handling
-- Error handling
-- Troubleshooting
+This keeps the portfolio easier to review and better reflects how I am progressing from individual scripts to more structured cybersecurity projects.
 
-## Tools and libraries
-
-- Python
-- PyCryptodome
-- Scapy
-- dnspython
-
-## What I learned
-
-These exercises helped me connect Python programming with security and networking concepts instead of practicing the language only with general programming examples.
-
-They also helped me understand how small scripts can be useful for testing, troubleshooting and learning how protocols behave.
-
-## Safety
-
-The network scripts are intended for educational use in local or authorized environments only.
+> Network testing is intended only for systems I own or have explicit permission to test.
